@@ -1,4 +1,6 @@
-export function Project() {
+import "./Project.css";
+
+export default function Project() {
     return (
         <div class="container">
             <div class="title-block">
