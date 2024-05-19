@@ -46,7 +46,6 @@ export default function MainNav() {
         }}
       >
         <Container>
-          {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand>*/}
           <Nav
             style={{
               marginLeft: "-50px",
