@@ -1,10 +1,8 @@
 .project-card {
     display: flex;
-    width: 100%;
-    max-width: 600px;
+    width: 80%;
     margin: 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 0px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -52,10 +50,5 @@
   
   .project-card.odd .project-card-link {
     flex-direction: row;
-  }
-
-  .separator {
-    border: 0.5px solid #808080; /* 设置边框为 1 像素的实线，颜色为黑色 (#000) */
-    margin: 5px 0; /* 设置分隔线上下的边距为 10 像素 */
   }
   

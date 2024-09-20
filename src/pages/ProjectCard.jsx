@@ -7,25 +7,25 @@ function ProjectCard({ id, title, description, imageUrl, group, isEven }) {
       {isEven ? (
         <>
           <div className="project-info">
-            <h2>{title}</h2>
+            <h2 style={{ color: "rgba(161, 177, 188, 1)" }}>{title}</h2>
             <p>{description}</p>
-            <hr className="separator"></hr>
-            <p>BY {group}</p>
+            {/* <hr className="separator"></hr>
+            <p>BY {group}</p> */}
           </div>
-          <div className="project-card-image">
+          <div className="">
             <img src={imageUrl} alt={title} />
           </div>
         </>
       ) : (
         <>
-          <div className="project-card-image">
+          <div className="">
             <img src={imageUrl} alt={title} />
           </div>
           <div className="project-info">
             <h2>{title}</h2>
             <p>{description}</p>
-            <hr className="separator"></hr>
-            <p>BY {group}</p>
+            {/* <hr className="separator"></hr>
+            <p>BY {group}</p> */}
           </div>
         </>
       )}
