@@ -1,58 +1,54 @@
 import Card from "react-bootstrap/Card";
 import data from "../data/project.json";
+import Nav from "./components/Nav";
+import BlogPage from "./projects/BlogPage";
+import About from "./components/AboutPage";
+import TrafficInfo from "./components/TrafficInfo";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
-export default function Home() {
+function ScrollToAnchor() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  return null;
+}
+
+export default function Home({
+  homeRef,
+  projectRef,
+  blogRef,
+  aboutRef,
+  trafficRef,
+}) {
+  const scrollTo = (elementRef) => {
+    elementRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
-      {/* <img src="/keyVisual.png" alt="main" className="w-full h-80" /> */}
-      <h3 style={{ display: "flex", marginLeft: "8%", marginTop: "50px" }}>
-        OUR PROJECT
-      </h3>
-      <div
-        style={{
-          marginTop: "50px",
-          marginLeft: "5%",
-          gap: "20px",
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          flexWrap: "wrap",
-          maxWidth: "90%",
-        }}
-      >
-        {data.map((card) => (
-          <Card
-            key={card.id}
-            style={{
-              width: "25%",
-              height: "350px",
-              border: "none",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
-            <Card.Img
-              variant="top"
-              src={card.imageUrl}
-              style={{ width: "250px", height: "250px" }}
-            />
-            <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
-            </Card.Body>
-            <Card.Body
-              style={{
-                display: "flex",
-                gap: "100px",
-                justifyContent: "space-between",
-              }}
-            >
-              <Card.Text style={{ color: "#2E2E2E" }}>{card.group}</Card.Text>
-              {/* <Card.Text>{card.date}</Card.Text> */}
-            </Card.Body>
-          </Card>
-        ))}
-      </div>
+      <Nav
+        scrollTo={scrollTo}
+        refs={{ homeRef, projectRef, blogRef, aboutRef, trafficRef }}
+      />
+      <ScrollToAnchor />
+      <section id="blog" ref={blogRef} className="pt-16">
+        <BlogPage />
+      </section>
+      <section id="traffic" ref={trafficRef} className="pt-16">
+        <TrafficInfo />
+      </section>
+      <section id="about" ref={aboutRef} className="pt-16">
+        <About />
+      </section>
     </>
   );
 }

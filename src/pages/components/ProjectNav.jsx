@@ -25,7 +25,7 @@ function FixedNav({ scrollTo, refs }) {
           >
             <div className="flex items-center h-full justify-center">
               <div className="text-white nanum-myeongjo-regular text-lg">
-                Home
+                回到首頁
               </div>
             </div>
           </Link>
@@ -39,21 +39,21 @@ function FixedNav({ scrollTo, refs }) {
           >
             <div className="flex items-center h-full justify-center">
               <div className="text-white nanum-myeongjo-regular text-lg">
-                Blog
+                專題組員
               </div>
             </div>
           </Link>
           <Link
-            to="/#project"
+            to="/#aboutUs"
             onClick={(e) => {
               e.preventDefault();
-              scrollTo(refs.projectRef);
+              scrollTo(refs.trafficRef);
             }}
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
               <div className="text-white nanum-myeongjo-regular text-lg">
-                Project
+                製作動機
               </div>
             </div>
           </Link>
@@ -67,7 +67,35 @@ function FixedNav({ scrollTo, refs }) {
           >
             <div className="flex items-center h-full justify-center">
               <div className="text-white nanum-myeongjo-regular text-lg">
-                About Us
+                專題介紹
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/#aboutUs"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(refs.aboutRef);
+            }}
+            className="no-underline h-full"
+          >
+            <div className="flex items-center h-full justify-center">
+              <div className="text-white nanum-myeongjo-regular text-lg">
+                照片紀錄
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/#aboutUs"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(refs.aboutRef);
+            }}
+            className="no-underline h-full"
+          >
+            <div className="flex items-center h-full justify-center">
+              <div className="text-white nanum-myeongjo-regular text-lg">
+                相關連結
               </div>
             </div>
           </Link>
@@ -78,31 +106,8 @@ function FixedNav({ scrollTo, refs }) {
 }
 
 function MainNav({ scrollTo, refs }) {
-  const backgroundImageUrl = "url(/keyVisual.png)";
-  const style = {
-    position: "relative",
-    height: "100vh",
-    width: "100%",
-    overflow: "hidden",
-  };
-
-  const backgroundStyle = {
-    content: '""',
-    backgroundImage: backgroundImageUrl,
-    backgroundSize: "cover",
-    backgroundPosition: "top",
-    backgroundRepeat: "no-repeat",
-    opacity: 0.3,
-    position: "absolute",
-    top: 0,
-    left: 0,
-    height: "100%",
-    width: "100%",
-    zIndex: -1,
-  };
   return (
-    <div className="" style={style}>
-      <div style={backgroundStyle}></div>
+    <div>
       <div className="flex justify-between">
         <Link to={"/"} className="pt-4 ml-1/20 no-underline text-black">
           <div className="flex items-center gap-4">
@@ -118,14 +123,30 @@ function MainNav({ scrollTo, refs }) {
           </div>
         </Link>
         <div className="w-40 flex items-center">
-          <button className="w-36 h-11 rounded-3xl border border-black">
+          {/* <button className="w-36 h-11 rounded-3xl border border-black">
             CONTACT US
-          </button>
+          </button> */}
+          <div className="flex mt-4 gap-6">
+            <a
+              href="https://www.instagram.com/ntnutahrd114_thyj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              className="ms-3 text-black"
+            >
+              <img src="/instagram.svg" alt="instagram" className="w-8 h-8" />
+              <span className="sr-only">instagram page</span>
+            </a>
+            <a
+              href="https://www.facebook.com/tahrdgraduationexhibition"
+              className=""
+            >
+              <img src="/facebook.svg" alt="facebook" className="w-8 h-8" />
+              <span className="sr-only">Facebook page</span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="flex gap-10 w-4/5 h-10 ml-1/20 mt-10 border-y border-black items-center">
         <Link
-          to="/#home"
+          to="/"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -134,7 +155,7 @@ function MainNav({ scrollTo, refs }) {
         >
           <div className="flex items-center h-full justify-center">
             <div className="text-black nanum-myeongjo-regular text-lg">
-              Home
+              首頁
             </div>
           </div>
         </Link>
@@ -148,7 +169,7 @@ function MainNav({ scrollTo, refs }) {
         >
           <div className="flex items-center h-full justify-center">
             <div className="text-black nanum-myeongjo-regular text-lg">
-              Blog
+              專題組員
             </div>
           </div>
         </Link>
@@ -162,7 +183,21 @@ function MainNav({ scrollTo, refs }) {
         >
           <div className="flex items-center h-full justify-center">
             <div className="text-black nanum-myeongjo-regular text-lg">
-              Project
+              製作動機
+            </div>
+          </div>
+        </Link>
+        <Link
+          to="/#aboutUs"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo(refs.trafficRef);
+          }}
+          className="no-underline h-full"
+        >
+          <div className="flex items-center h-full justify-center">
+            <div className="text-black nanum-myeongjo-regular text-lg">
+              專題介紹
             </div>
           </div>
         </Link>
@@ -176,30 +211,24 @@ function MainNav({ scrollTo, refs }) {
         >
           <div className="flex items-center h-full justify-center">
             <div className="text-black nanum-myeongjo-regular text-lg">
-              About Us
+              照片紀錄
             </div>
           </div>
         </Link>
-      </div>
-      <div className="flex">
-        <div className="w-1/2">
-          <div className="relative w-full pb-[75%]">
-            <img
-              src="/word.png"
-              alt="title"
-              className="absolute top-4 -left-10 w-full h-5/6 object-contain"
-            />
+        <Link
+          to="/#aboutUs"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo(refs.aboutRef);
+          }}
+          className="no-underline h-full"
+        >
+          <div className="flex items-center h-full justify-center">
+            <div className="text-black nanum-myeongjo-regular text-lg">
+              相關連結
+            </div>
           </div>
-        </div>
-        <div className="w-1/2 mt-1/8 text-indigo-700">
-          <div className="w-2/3 flex flex-col justify-start items-start">
-            <h4 className="font-bold">TAHRD</h4>
-            <p className="text-2xl font-bold text-left">
-              "Technology is not just a tool. It can give learners a voice that
-              they may not have had before." - George Couros
-            </p>
-          </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
