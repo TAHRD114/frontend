@@ -86,10 +86,10 @@ function FixedNav({ scrollTo, refs }) {
             </div>
           </Link>
           <Link
-            to="/#aboutUs"
+            to="/#game"
             onClick={(e) => {
               e.preventDefault();
-              scrollTo(refs.aboutRef);
+              scrollTo(refs.gameRef);
             }}
             className="no-underline h-full"
           >
@@ -239,10 +239,10 @@ function MainNav({ scrollTo, refs }) {
           </div>
         </Link>
         <Link
-          to="/#aboutUs"
+          to="/#game"
           onClick={(e) => {
             e.preventDefault();
-            scrollTo(refs.aboutRef);
+            scrollTo(refs.gameRef);
           }}
           className="no-underline h-full"
         >

@@ -3,7 +3,7 @@ export default function About() {
     <>
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/4-05.png" alt="icon" className="w-20 h-20" />
-        <h3>關於科技系</h3>
+        <h3 className="nanum-myeongjo-regular">關於科技系</h3>
       </div>
       <div className="mx-auto w-4/5 ">
         <p>

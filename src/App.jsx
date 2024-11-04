@@ -5,6 +5,7 @@ import { BrowserRouter, Route, useLocation, Routes } from "react-router-dom";
 import "./App.css";
 import Loading from "./pages/components/loading";
 import ProjectPage from "./pages/projects/ProjectPage";
+import PuzzleGame from "./pages/components/PuzzleGame";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             }
           />
           <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/puzzle_game" element={<PuzzleGame />} />
         </Routes>
         <Footer />
       </div>

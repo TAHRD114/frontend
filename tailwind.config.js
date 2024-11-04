@@ -21,7 +21,8 @@ export default {
     colors: {
       "light-yellow": "#feffe8",
       "dark-yellow": "#ecf0a7",
-      "nav-blue": "#203f49",
+      "nav-blue": "#04434F",
+      pink: "#8E7EB9",
     },
   },
   plugins: [],
