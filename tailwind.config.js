@@ -18,6 +18,11 @@ export default {
         "4/5": "80%",
       },
     },
+    colors: {
+      "light-yellow": "#feffe8",
+      "dark-yellow": "#ecf0a7",
+      "nav-blue": "#203f49",
+    },
   },
   plugins: [],
 };

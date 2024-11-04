@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
 import Footer from "./pages/components/Footer";
 import { BrowserRouter, Route, useLocation, Routes } from "react-router-dom";
@@ -7,12 +7,6 @@ import Loading from "./pages/components/loading";
 import ProjectPage from "./pages/projects/ProjectPage";
 
 function App() {
-  const homeRef = useRef(null);
-  const projectRef = useRef(null);
-  const blogRef = useRef(null);
-  const trafficRef = useRef(null);
-  const aboutRef = useRef(null);
-
   return (
     <BrowserRouter>
       <div className="">
@@ -21,16 +15,12 @@ function App() {
             path="/"
             element={
               <main>
-                <Home
-                  refs={{ homeRef, projectRef, blogRef, aboutRef, trafficRef }}
-                  scrollTo={scrollTo}
-                />
+                <Home />
               </main>
             }
           />
           <Route path="/projects/:id" element={<ProjectPage />} />
         </Routes>
-
         <Footer />
       </div>
     </BrowserRouter>

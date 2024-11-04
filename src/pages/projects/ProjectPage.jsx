@@ -1,10 +1,27 @@
 import data from "../../data/project.json";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProjectNav from "../components/ProjectNav";
+import ReactMarkdown from "react-markdown";
 
 export default function ProjectPage() {
   const { id } = useParams();
+  const [markdownContent, setMarkdownContent] = useState("");
   const project = data.find((project) => project.id === parseInt(id));
+
+  useEffect(() => {
+    const fetchMarkdown = async () => {
+      try {
+        const response = await fetch(`/data/${id}.md`);
+        const text = await response.text();
+        setMarkdownContent(text);
+      } catch (error) {
+        console.error("Error fetching the markdown file:", error);
+      }
+    };
+
+    fetchMarkdown();
+  }, [id]);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -22,10 +39,7 @@ export default function ProjectPage() {
           className="object-contain w-full h-full"
         />
       </div>
-      <div
-        className="w-3/5 mx-auto prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: project.detail }}
-      />
+      <ReactMarkdown>{markdownContent}</ReactMarkdown>
     </>
   );
 }

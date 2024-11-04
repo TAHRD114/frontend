@@ -12,45 +12,50 @@ function TypeTabs({ onSelect }) {
   };
 
   return (
-    <div className="bg-gray-300 w-full p-2 rounded-2xl">
+    <div className="bg-nav-blue w-full p-2 rounded-2xl">
       <div className="flex justify-center space-x-4">
         <button
-          className={`bg-gray-300 hover:bg-gray-500 text-black font-bold py-2 px-4 rounded-full ${
-            key === "code" ? "bg-gray-500" : ""
+          className={` hover:bg-dark-yellow font-bold py-2 px-4 rounded-full ${
+            key === "code" ? "bg-dark-yellow text-nav-blue" : "text-white"
           }`}
           onClick={() => handleSelect("code")}
+          style={{ transition: "all 0.3s ease" }}
         >
           軟體開發
         </button>
         <button
-          className={`bg-gray-300 hover:bg-gray-500 text-black font-bold py-2 px-4 rounded-full ${
-            key === "virtual" ? "bg-gray-500" : ""
+          className={`hover:bg-dark-yellow font-bold py-2 px-4 rounded-full ${
+            key === "virtual" ? "bg-dark-yellow text-nav-blue" : "text-white"
           }`}
           onClick={() => handleSelect("virtual")}
+          style={{ transition: "all 0.3s ease" }}
         >
           虛擬實境
         </button>
         <button
-          className={`bg-gray-300 hover:bg-gray-500 text-black font-bold py-2 px-4 rounded-full ${
-            key === "product" ? "bg-gray-500" : ""
+          className={` hover:bg-dark-yellow font-bold py-2 px-4 rounded-full ${
+            key === "product" ? "bg-dark-yellow text-nav-blue" : "text-white"
           }`}
           onClick={() => handleSelect("product")}
+          style={{ transition: "all 0.3s ease" }}
         >
           產品設計
         </button>
         <button
-          className={`bg-gray-300 hover:bg-gray-500 text-black font-bold py-2 px-4 rounded-full ${
-            key === "edu" ? "bg-gray-500" : ""
+          className={` hover:bg-dark-yellow font-bold py-2 px-4 rounded-full ${
+            key === "edu" ? "bg-dark-yellow text-nav-blue" : "text-white"
           }`}
           onClick={() => handleSelect("edu")}
+          style={{ transition: "all 0.3s ease" }}
         >
           教育導向
         </button>
         <button
-          className={`bg-gray-300 hover:bg-gray-500 text-black font-bold py-2 px-4 rounded-full ${
-            key === "hr" ? "bg-gray-500" : ""
+          className={` hover:bg-dark-yellow font-bold py-2 px-4 rounded-full ${
+            key === "hr" ? "bg-dark-yellow text-nav-blue" : "text-white"
           }`}
           onClick={() => handleSelect("hr")}
+          style={{ transition: "all 0.3s ease" }}
         >
           人資桌遊
         </button>
@@ -70,9 +75,10 @@ const Blog = () => {
 
   return (
     <div className="App">
-      <h3 style={{ display: "flex", marginLeft: "8%", marginTop: "50px" }}>
-        作品集
-      </h3>
+      <div className="flex mt-12 ml-1/20 items-center">
+        <img src="/icon/2-05.png" alt="icon" className="w-20 h-20" />
+        <h3 className="nanum-myeongjo-regular">作品集</h3>
+      </div>
       <div className="projects">
         <TypeTabs onSelect={handleTypeSelect} />
         {filteredData.map((project, index) => (

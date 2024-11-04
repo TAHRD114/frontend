@@ -5,7 +5,7 @@ import BlogPage from "./projects/BlogPage";
 import About from "./components/AboutPage";
 import TrafficInfo from "./components/TrafficInfo";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -23,16 +23,17 @@ function ScrollToAnchor() {
   return null;
 }
 
-export default function Home({
-  homeRef,
-  projectRef,
-  blogRef,
-  aboutRef,
-  trafficRef,
-}) {
+export default function Home() {
   const scrollTo = (elementRef) => {
     elementRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const homeRef = useRef(null);
+  const projectRef = useRef(null);
+  const blogRef = useRef(null);
+  const trafficRef = useRef(null);
+  const aboutRef = useRef(null);
+
   return (
     <>
       <Nav
