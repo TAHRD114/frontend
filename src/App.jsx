@@ -1,3 +1,4 @@
+// app.jsx
 import React, { useRef, useEffect } from "react";
 import Nav from "./pages/Nav";
 import Project from "./pages/Project";
@@ -5,6 +6,7 @@ import BlogPage from "./pages/BlogPage";
 import About from "./pages/AboutPage";
 import Home from "./pages/Home";
 import Footer from "./pages/Footer";
+import VoteSystem from "./pages/VoteSystem"; // Import the new VoteSystem component
 import { BrowserRouter, useLocation } from "react-router-dom";
 import "./App.css";
 
@@ -29,6 +31,7 @@ function App() {
   const projectRef = useRef(null);
   const blogRef = useRef(null);
   const aboutRef = useRef(null);
+  const voteRef = useRef(null); // New ref for the VoteSystem section
 
   const scrollTo = (elementRef) => {
     elementRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -39,7 +42,7 @@ function App() {
       <div className="">
         <Nav
           scrollTo={scrollTo}
-          refs={{ homeRef, projectRef, blogRef, aboutRef }}
+          refs={{ homeRef, projectRef, blogRef, aboutRef, voteRef }}
         />
         <ScrollToAnchor />
         <main>
@@ -52,6 +55,9 @@ function App() {
           {/* <section id="project" ref={projectRef}>
             <Project />
           </section> */}
+          <section id="vote" ref={voteRef}> {/* New VoteSystem section */}
+            <VoteSystem />
+          </section>
           <section id="about" ref={aboutRef}>
             <About />
           </section>
