@@ -1,5 +1,5 @@
 export default function Footer() {
-  const backgroundImageUrl = "url(/keyVisual.png)";
+  const backgroundImageUrl = "url(/keyVisual.webp)";
   const style = {
     position: "relative",
     height: "100%",

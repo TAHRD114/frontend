@@ -54,8 +54,24 @@ export default function ProjectPage() {
     return <div>Project not found</div>;
   }
 
+  const backgroundImageUrl = "url(/keyVisual.webp)";
+
+  const backgroundStyle = {
+    backgroundImage: backgroundImageUrl,
+    backgroundSize: "cover",
+    backgroundPosition: "top",
+    backgroundRepeat: "no-repeat",
+    opacity: 0.2,
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    zIndex: -1,
+  };
+
   return (
     <>
+      <div style={backgroundStyle} className="h-3/4 md:h-screen"></div>
       <ProjectNav
         scrollTo={scrollTo}
         refs={{ memberRef, motiveRef, introRef, recordRef }}
@@ -66,18 +82,35 @@ export default function ProjectPage() {
       <h1 className="mt-4 text-center ChenYuluoyan text-4xl w-4/5 mx-auto md:w-full md:text-5xl">
         {project.title}
       </h1>
-      <div className="w-4/5 mx-auto md:w-3/5 md:scale-75">
+      <div className="w-4/5 mx-auto md:w-2/5 ink-box">
+        {/* <div className="box-inner"> */}
         <img
           src={project.projectImg}
           alt={project.title}
-          className="object-contain w-full h-full"
+          className="box-inner"
         />
+        {/* </div> */}
       </div>
+      {/* <img
+        src="/component/2.webp"
+        alt="icon"
+        className="absolute right-0 bottom-0 w-1/3 "
+      /> */}
       <section id="member" ref={memberRef} className="pt-24">
         <div className="w-5/6 mx-auto">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">專題組員</h3>
             <hr className="my-1 w-20" />
+            <div className="w-full md:w-2/3 md:h-1/2 overflow-hidden text-center">
+              <img
+                src={project.groupImg}
+                alt={project.title}
+                className="object-cover object-center w-full h-full"
+              />
+
+              <p className="Yu-Mincho-Pr6n">{project.groupMember}</p>
+              <p>（由左至右）</p>
+            </div>
           </div>
         </div>
       </section>

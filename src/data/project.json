@@ -7,7 +7,8 @@
         "detail": "/data/1.md",
         "imageUrl": "/logo/8.png",
         "projectImg": "/logo2/8.png",
-        "group": "第一組",
+        "groupImg": "/group/8.webp",
+        "groupMember": "林彥妤、劉亞臻",
         "type": "virtual"
       },
       {
@@ -17,7 +18,8 @@
         "motive": "現代生活中，繁忙的生活節奏常使我們無暇關注食材的購買與管理，導致了許多不必要的食物浪費，為了解決這一問題，我們開發了一個專為管理食材而設計的網站：Pantry Pal，目的是協助想要減少食材等浪費的群眾可以有效管理食材，減少浪費。",
         "imageUrl": "/logo/13.png",
         "projectImg": "/logo2/13.png",
-        "group": "第一組",
+        "groupImg": "/group/13.webp",
+        "groupMember": "林鈺茹、李苡嘉、王依仁、柯幸孜、陳思岑",
         "type": "code"
       },
       {
@@ -27,7 +29,8 @@
         "motive": "",
         "imageUrl": "/logo/5.png",
         "projectImg": "/logo2/5.png",
-        "group": "第三組",
+        "groupImg": "/group/5.webp",
+        "groupMember": "徐倍玄、陳奕廷、陳亮竹、李嘉明、蔡宗廷",
         "type": "product"
       },
       {
@@ -38,7 +41,8 @@
         "detail": "",
         "imageUrl": "/logo/4.png",
         "projectImg": "/logo2/4.png",
-        "group": "第三組",
+        "groupImg": "/group/4.webp",
+        "groupMember": "王常峻、楊士寬、莊翔鈞、林逸豪、李宸逸",
         "type": "product"
       },
       {
@@ -48,8 +52,9 @@
         "motive": "螺絲起子作為現代人工作和生活中的一個重要工具，無論是在家庭修補、DIY專案還是工業製造中， 都扮演著關鍵的角色。而人們期望工具不僅僅具有功能性的，更希望它們能夠提高效率、節省時間，甚至提供更好的使用體驗。因此，我們決定設計與開發新的螺絲起子，以滿足人們對工具的需求和期望。",
         "detail": "",
         "imageUrl": "/logo/3.png",
-        "projectImg": "/logo2/3.png",
-        "group": "第三組",
+        "projectImg": "/logo2/3.jpg",
+        "groupImg": "/group/3.webp",
+        "groupMember": "洪鈺凱、汪威廷、陳彥愷、林鈺翔",
         "type": "product"
       },
       {
@@ -60,7 +65,8 @@
         "detail": "",
         "imageUrl": "/logo/1.jpg",
         "projectImg": "/logo2/1.jpg",
-        "group": "第三組",
+        "groupImg": "/group/1.webp",
+        "groupMember": "施宏儒、黃鈺娟、羅浚佑",
         "type": "code"
       },
       {
@@ -71,7 +77,8 @@
         "detail": "",
         "imageUrl": "/logo/9.jpg",
         "projectImg": "/logo2/9.jpg",
-        "group": "第三組",
+        "groupImg": "/group/9.webp",
+        "groupMember": "黃思齊、徐嫚謙、丁煦芊、關煒培、李承恩",
         "type": "code"
       },
       {
@@ -82,7 +89,8 @@
         "detail": "地圖卡：展示城市及其各個區域。獎勵卡：玩家完成任務後獲得的獎勵。角色卡：玩家所扮演的角色，包含特定技能和能力。隨機事件卡：描述城市中突發的危機事件。遊戲玩法與機制： 每回合，玩家會抽出3間受災戶，並通過一回合三個行動去救援房屋。每經過幾個回合，會有隨機事件發生，增加遊戲的挑戰性和變數。遊戲的目標是在指定時間內確保20間房屋沒有損毀，並最終結算各玩家獲得的物資，物資多者獲勝。核心理念： 遊戲的核心理念是通過桌遊拉近人與人之間的距離，並在輕鬆有趣的氛圍中，讓玩家學習和體會團隊合作的重要性。透過設定具體的遊戲目標，玩家達成目標的過程中，間接地證明學會了團隊合作，達到教育的目的。",
         "imageUrl": "/logo/12.png",
         "projectImg": "/logo2/12.png",
-        "group": "第三組",
+        "groupImg": "/group/12.webp",
+        "groupMember": "陳翰駿、林奕嫻、張博凱",
         "type": "hr"
       },
       {
@@ -93,7 +101,8 @@
         "detail": "",
         "imageUrl": "/logo/11.png",
         "projectImg": "/logo2/11.png",
-        "group": "第三組",
+        "groupImg": "/group/11.webp",
+        "groupMember": "盧梓銓、林志遠、邱致瑋、魏士凱",
         "type": "hr"
       },
       {
@@ -104,7 +113,8 @@
         "detail": "",
         "imageUrl": "/logo/6.png",
         "projectImg": "/logo2/6.png",
-        "group": "第三組",
+        "groupImg": "/group/6.webp",
+        "groupMember": "翁健哲、杜洺鋒、李承曄",
         "type": "edu"
       },
       {
@@ -115,7 +125,8 @@
         "detail": "",
         "imageUrl": "/logo/10.png",
         "projectImg": "/logo2/10.png",
-        "group": "第三組",
+        "groupImg": "/group/10.webp",
+        "groupMember": "陳星、李米蕙、盧紫妍、吳亞蓉、古于育",
         "type": "edu"
       },
       {
@@ -126,7 +137,8 @@
         "detail": "",
         "imageUrl": "/logo/7.png",
         "projectImg": "/logo2/7.png",
-        "group": "第三組",
+        "groupImg": "/group/7.webp",
+        "groupMember": "陳淑鈃，王于萱，孫源智，葉芷伃，黃麟堯",
         "type": "virtual"
       },
       {
@@ -137,7 +149,8 @@
         "detail": "",
         "imageUrl": "/logo/2.svg",
         "projectImg": "/logo2/2.png",
-        "group": "第三組",
+        "groupImg": "/group/2.webp",
+        "groupMember": "張乃云、劉媞欣、簡珮軒、潘允蕙、胡亞莉",
         "type": "edu"
       }
 ]

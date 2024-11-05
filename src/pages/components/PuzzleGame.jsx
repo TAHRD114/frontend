@@ -182,7 +182,7 @@ function App() {
           <span>步數: {steps}步</span>
         </div>
       </div>
-      <div className="w-full justify-center items-center">
+      <div className="w-full flex justify-center items-center">
         {showTargetImage ? (
           <div className="flex justify-center items-center scale-75 md:w-[450px] md:h-[450px]">
             <img src="/logo2.png" alt="目標圖片" />
