@@ -35,6 +35,10 @@ export default function Home() {
   const aboutRef = useRef(null);
   const gameRef = useRef(null);
 
+  // useEffect(() => {
+  //   setBlogRef(blogRef);
+  // }, [blogRef, setBlogRef]);
+
   return (
     <>
       <Nav

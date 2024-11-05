@@ -6,7 +6,7 @@ function FixedNav() {
   return (
     <>
       <div className="flex justify-between bg-nav-blue">
-        <Link to={"/"} className=" ml-1/20 no-underline text-black">
+        <Link to={"/"} className="ml-1/20 no-underline text-black">
           <div className="flex items-center gap-4">
             <img
               alt="logo"
@@ -17,11 +17,11 @@ function FixedNav() {
         </Link>
         <div className="flex gap-10 items-center mr-1/20">
           <Link
-            to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+            to={"/"}
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   window.scrollTo({ top: 0, behavior: "smooth" });
+            // }}
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
@@ -30,20 +30,6 @@ function FixedNav() {
               </div>
             </div>
           </Link>
-          {/* <Link
-              to="/#blog"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollTo(refs.blogRef);
-              }}
-              className="no-underline h-full"
-            >
-              <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  作品集
-                </div>
-              </div>
-            </Link> */}
         </div>
       </div>
     </>
@@ -171,10 +157,10 @@ function App() {
   };
 
   return (
-    <div className="App mb-5">
+    <div className="mb-5 w-full">
       <FixedNav />
-      <div className="controls">
-        <div className="button-container">
+      <div className="flex justify-center items-center mt-4 w-full flex-wrap">
+        <div className="flex gap-4">
           <button
             className="button"
             onClick={shuffled ? resetGame : shuffleTiles}
@@ -188,7 +174,7 @@ function App() {
             {showTargetImage ? "隱藏目標圖片" : "查看目標圖片"}
           </button>
         </div>
-        <div className="status">
+        <div className="flex justify-center items-center">
           <span>3x3</span>
           <span> | </span>
           <span>時間: {formatTime(time)}</span>
@@ -196,31 +182,39 @@ function App() {
           <span>步數: {steps}步</span>
         </div>
       </div>
-      {showTargetImage ? (
-        <div className="target-image">
-          <img src="/logo2.png" alt="目標圖片" />
-        </div>
-      ) : (
-        <div className="puzzle-container">
-          <div className="puzzle">
-            {tiles.map((tile, index) => (
-              <div
-                key={index}
-                className={`tile ${tile === emptyIndex ? "empty" : ""} ${
-                  isMovable(index) ? "movable" : ""
-                }`}
-                onClick={() => moveTile(index)}
-                style={{
-                  backgroundPosition: `${(tile % gridSize) * -150}px ${
-                    Math.floor(tile / gridSize) * -150
-                  }px`,
-                }}
-              ></div>
-            ))}
+      <div className="w-full justify-center items-center">
+        {showTargetImage ? (
+          <div className="flex justify-center items-center scale-75 md:w-[450px] md:h-[450px]">
+            <img src="/logo2.png" alt="目標圖片" />
           </div>
+        ) : (
+          <div className="flex justify-center items-center scale-75 md:w-[450px] md:h-[450px]">
+            <div className="puzzle">
+              {tiles.map((tile, index) => (
+                <div
+                  key={index}
+                  className={`tile ${tile === emptyIndex ? "empty" : ""} ${
+                    isMovable(index) ? "movable" : ""
+                  }`}
+                  onClick={() => moveTile(index)}
+                  style={{
+                    backgroundPosition: `${(tile % gridSize) * -150}px ${
+                      Math.floor(tile / gridSize) * -150
+                    }px`,
+                  }}
+                ></div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {isSolved && (
+        <div className="flex justify-center">
+          <img src="/icon/2-05.png" alt="icon" className="w-20 h-20" />
+          <p className="congrats-message">恭喜！你完成了拼圖！</p>
         </div>
       )}
-      {isSolved && <p className="congrats-message">恭喜！你完成了拼圖！</p>}
     </div>
   );
 }

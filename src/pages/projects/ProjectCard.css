@@ -1,6 +1,7 @@
 .project-card {
     display: flex;
     width: 95%;
+    min-width: 95%;
     margin: 10px auto;
     border-radius: 10px;
     border: none;

@@ -4,7 +4,6 @@
         "id": 1,
         "title": "在生活中迷路了",
         "description": "希望可以在人們迷惘時給予一點點溫暖。",
-        "motive": "看到一位葡萄牙藝術家為城市做了一張哭泣地圖，覺得用不同角度去看城市這點很新奇、很有趣。經過多次討論後衍生成想做一份提供人們抒發情緒、找回自己的地圖，因此取名為「在生活中迷路了」。",
         "detail": "/data/1.md",
         "imageUrl": "/logo/8.png",
         "projectImg": "/logo2/8.png",
@@ -16,7 +15,6 @@
         "title": "行食曆Pantry Pal",
         "description": "「Pantry Pal」是一款能幫助使用者紀錄食材的小幫手，透過掃描紀錄買過的食材，顯示在行事曆上，讓使用者能夠一目瞭然的知道食材剩餘狀況。",
         "motive": "現代生活中，繁忙的生活節奏常使我們無暇關注食材的購買與管理，導致了許多不必要的食物浪費，為了解決這一問題，我們開發了一個專為管理食材而設計的網站：Pantry Pal，目的是協助想要減少食材等浪費的群眾可以有效管理食材，減少浪費。",
-        "detail": "結合SDGs永續致展目標，促進食物控管，減少食物浪費以達成負責任的消費方式，並且推廣消除飢餓的理念，也避免重複購買品項以減少不必要支出。由此，我們發想出Pantry Pal，提供給想減少食物浪費的群眾，有一個輕鬆、便利的管道妥善管理他們的食材，透過智能提醒功能確保不會遺漏任何重要事項 ! 其中，連結了google日曆的行事曆顯示食材過期日，並且可以設定過期提醒，減少繁瑣的整理和管理食材的時間。並且結合掃描和影像辨識技術、食譜推薦功能提升使用者操作的便利性。以及增設群組功能方便與親友共同管理食材，家庭或室友群組的建立讓多位使用者輕鬆共享資訊，即時了解共享食材庫存情況，避免重複購買導致食材浪費。無論是在家裡做菜，還是外出購物，Pantry Pal都能成為最貼心的助手，為使用者帶來更加輕鬆、方便的質感生活體驗 ! ",
         "imageUrl": "/logo/13.png",
         "projectImg": "/logo2/13.png",
         "group": "第一組",
@@ -27,9 +25,8 @@
         "title": "便攜式露營冰箱",
         "description": "便攜式露營用冰箱是融合「便攜帶、易收納、好清潔」等概念的冰箱；此產品以致冷晶片系統、組裝式、模組化等特色進行實作，以滿足概念與露營的便攜設計。",
         "motive": "",
-        "detail": "<h2>项目描述</h2><p>段落内容</p><ul><li>列表项</li></ul>",
         "imageUrl": "/logo/5.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/5.png",
         "group": "第三組",
         "type": "product"
       },
@@ -40,7 +37,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/4.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/4.png",
         "group": "第三組",
         "type": "product"
       },
@@ -51,7 +48,7 @@
         "motive": "螺絲起子作為現代人工作和生活中的一個重要工具，無論是在家庭修補、DIY專案還是工業製造中， 都扮演著關鍵的角色。而人們期望工具不僅僅具有功能性的，更希望它們能夠提高效率、節省時間，甚至提供更好的使用體驗。因此，我們決定設計與開發新的螺絲起子，以滿足人們對工具的需求和期望。",
         "detail": "",
         "imageUrl": "/logo/3.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/3.png",
         "group": "第三組",
         "type": "product"
       },
@@ -62,7 +59,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/1.jpg",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/1.jpg",
         "group": "第三組",
         "type": "code"
       },
@@ -73,7 +70,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/9.jpg",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/9.jpg",
         "group": "第三組",
         "type": "code"
       },
@@ -84,7 +81,7 @@
         "motive": "我們的製作動機是通過桌遊這種輕鬆有趣的方式，強調團隊合作的重要性，並將其應用於教育中。隨著現代社會對於團隊合作能力的需求不斷增長，我們希望通過這款遊戲，讓玩家在享受遊戲樂趣的同時，學會有效的溝通、協作和問題解決技巧，並提升個人及團隊的成長和績效。",
         "detail": "地圖卡：展示城市及其各個區域。獎勵卡：玩家完成任務後獲得的獎勵。角色卡：玩家所扮演的角色，包含特定技能和能力。隨機事件卡：描述城市中突發的危機事件。遊戲玩法與機制： 每回合，玩家會抽出3間受災戶，並通過一回合三個行動去救援房屋。每經過幾個回合，會有隨機事件發生，增加遊戲的挑戰性和變數。遊戲的目標是在指定時間內確保20間房屋沒有損毀，並最終結算各玩家獲得的物資，物資多者獲勝。核心理念： 遊戲的核心理念是通過桌遊拉近人與人之間的距離，並在輕鬆有趣的氛圍中，讓玩家學習和體會團隊合作的重要性。透過設定具體的遊戲目標，玩家達成目標的過程中，間接地證明學會了團隊合作，達到教育的目的。",
         "imageUrl": "/logo/12.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/12.png",
         "group": "第三組",
         "type": "hr"
       },
@@ -95,7 +92,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/11.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/11.png",
         "group": "第三組",
         "type": "hr"
       },
@@ -106,7 +103,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/6.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/6.png",
         "group": "第三組",
         "type": "edu"
       },
@@ -117,7 +114,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/10.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/10.png",
         "group": "第三組",
         "type": "edu"
       },
@@ -128,7 +125,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/7.png",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/7.png",
         "group": "第三組",
         "type": "virtual"
       },
@@ -139,7 +136,7 @@
         "motive": "",
         "detail": "",
         "imageUrl": "/logo/2.svg",
-        "projectImg": "/logo2/13.png",
+        "projectImg": "/logo2/2.png",
         "group": "第三組",
         "type": "edu"
       }

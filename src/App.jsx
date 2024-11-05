@@ -8,9 +8,10 @@ import ProjectPage from "./pages/projects/ProjectPage";
 import PuzzleGame from "./pages/components/PuzzleGame";
 
 function App() {
+  const [blogRef, setBlogRef] = React.useState(null);
   return (
     <BrowserRouter>
-      <div className="">
+      <div>
         <Routes>
           <Route
             path="/"
