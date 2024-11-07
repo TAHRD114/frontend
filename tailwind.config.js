@@ -18,6 +18,12 @@ export default {
         "4/5": "80%",
       },
     },
+    colors: {
+      "light-yellow": "#feffe8",
+      "dark-yellow": "#ecf0a7",
+      "nav-blue": "#04434F",
+      pink: "#8E7EB9",
+    },
   },
   plugins: [],
 };

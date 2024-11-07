@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  background-color: #D1E0F3;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -29,6 +30,24 @@ code {
   font-style: normal;
 }
 
+.Yu-Mincho-Pr6n {
+  font-family: yu-mincho-pr6n, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.Source-Han-Serif{
+  font-family: source-han-serif-tw-subset, sans-serif;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChenYuluoyan';
+  src: url(/ChenYuluoyan-Thin.ttf);
+}
+.ChenYuluoyan {
+  font-family: 'ChenYuluoyan', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
 .fade-in {
   opacity: 1;
   visibility: visible;

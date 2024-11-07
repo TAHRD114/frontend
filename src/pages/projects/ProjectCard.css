@@ -1,0 +1,72 @@
+.project-card {
+    display: flex;
+    width: 95%;
+    min-width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    text-decoration: none;
+    color: inherit;
+    background-color: #feffe8;
+  }
+  
+  .project-card-link {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-card-image {
+    flex: 0 0 200px;
+  }
+  
+  .project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .project-info p {
+    margin: 10px 0;
+  }
+  
+  .project-card.even .project-card-link {
+    flex-direction: row-reverse;
+  }
+  
+  .project-card.odd .project-card-link {
+    flex-direction: row;
+  }
+
+  .ink-box {
+    border-width: 4px 5px 4px 6px;
+    border-radius: 90% 6% 93% 5% / 5% 94% 7% 95%;
+    /* 做出傾斜的視覺感 */
+    transform: rotate(2deg);
+    padding: 5px; /* 添加内边距 */
+    box-sizing: border-box; /* 确保内边距和边框包含在元素的总宽度和高度内 */
+  }
+  .box-inner {
+    /* 將傾斜的部分修正 */
+    transform: rotate(-2deg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片覆盖整个容器 */
+    border-radius: inherit; /* 确保图片的边角与容器一致 */
+  }

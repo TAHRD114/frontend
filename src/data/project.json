@@ -1,59 +1,156 @@
 
-    [
+[
       {
         "id": 1,
         "title": "在生活中迷路了",
         "description": "希望可以在人們迷惘時給予一點點溫暖。",
-        "imageUrl": "/UFO.png",
-        "group": "第一組"
+        "detail": "/data/1.md",
+        "imageUrl": "/logo/8.png",
+        "projectImg": "/logo2/8.png",
+        "groupImg": "/group/8.webp",
+        "groupMember": "林彥妤、劉亞臻",
+        "type": "virtual"
       },
       {
         "id": 2,
         "title": "行食曆Pantry Pal",
         "description": "「Pantry Pal」是一款能幫助使用者紀錄食材的小幫手，透過掃描紀錄買過的食材，顯示在行事曆上，讓使用者能夠一目瞭然的知道食材剩餘狀況。",
-        "imageUrl": "/UFO.png",
-        "group": "第一組"
+        "motive": "現代生活中，繁忙的生活節奏常使我們無暇關注食材的購買與管理，導致了許多不必要的食物浪費，為了解決這一問題，我們開發了一個專為管理食材而設計的網站：Pantry Pal，目的是協助想要減少食材等浪費的群眾可以有效管理食材，減少浪費。",
+        "imageUrl": "/logo/13.png",
+        "projectImg": "/logo2/13.png",
+        "groupImg": "/group/13.webp",
+        "groupMember": "林鈺茹、李苡嘉、王依仁、柯幸孜、陳思岑",
+        "type": "code"
       },
       {
         "id": 3,
-        "title": "科技應用之數位教材 3",
-        "description": "簡介介紹 3",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "便攜式露營冰箱",
+        "description": "便攜式露營用冰箱是融合「便攜帶、易收納、好清潔」等概念的冰箱；此產品以致冷晶片系統、組裝式、模組化等特色進行實作，以滿足概念與露營的便攜設計。",
+        "motive": "",
+        "imageUrl": "/logo/5.png",
+        "projectImg": "/logo2/5.png",
+        "groupImg": "/group/5.webp",
+        "groupMember": "徐倍玄、陳奕廷、陳亮竹、李嘉明、蔡宗廷",
+        "type": "product"
       },
       {
         "id": 4,
-        "title": "科技應用之數位教材 4",
-        "description": "簡介介紹 3",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "ECO ID",
+        "description": "ECO LID為一款智能環保杯蓋，運用藍芽、聲波感測、APP多樣化功能等技術，結合環保、健康議題，致力於改善飲水習慣與觀念，幫助使用者注重自身與家庭成員的健康。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/4.png",
+        "projectImg": "/logo2/4.png",
+        "groupImg": "/group/4.webp",
+        "groupMember": "王常峻、楊士寬、莊翔鈞、林逸豪、李宸逸",
+        "type": "product"
       },
       {
         "id": 5,
-        "title": "科技應用之數位教材 5",
-        "description": "簡介介紹 5",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "啟動人生",
+        "description": "起動人生是一款創新設計的替換式螺絲起子，結合了先進的CAD和CAM技術，大幅提升使用效率。其設計不僅降低了螺絲頭遺失的機率，同時符合人體工學，確保長時間使用的舒適性，為客戶提供更優質使用體驗的解決方案。",
+        "motive": "螺絲起子作為現代人工作和生活中的一個重要工具，無論是在家庭修補、DIY專案還是工業製造中， 都扮演著關鍵的角色。而人們期望工具不僅僅具有功能性的，更希望它們能夠提高效率、節省時間，甚至提供更好的使用體驗。因此，我們決定設計與開發新的螺絲起子，以滿足人們對工具的需求和期望。",
+        "detail": "",
+        "imageUrl": "/logo/3.png",
+        "projectImg": "/logo2/3.jpg",
+        "groupImg": "/group/3.webp",
+        "groupMember": "洪鈺凱、汪威廷、陳彥愷、林鈺翔",
+        "type": "product"
       },
       {
         "id": 6,
-        "title": "科技應用之數位教材 6",
-        "description": "簡介介紹 3",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "MoneyCat校園記帳APP",
+        "description": "本專題旨在開發一款大學生記帳APP，核心功能包括將「想要的開銷」獨立分類、利用KANO模型分析消費滿意度、以及提供校園論壇以便分享生活優惠消息，提升財務管理效能。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/1.jpg",
+        "projectImg": "/logo2/1.jpg",
+        "groupImg": "/group/1.webp",
+        "groupMember": "施宏儒、黃鈺娟、羅浚佑",
+        "type": "code"
       },
       {
         "id": 7,
-        "title": "科技應用之數位教材 7",
-        "description": "簡介介紹 3",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "碳權於區塊鏈的追蹤與研究",
+        "description": "我們的網站不僅提供了學習碳權相關知識的管道，還藉由區塊鏈上的碳權貨幣交易資料做深入的分析，並透過視覺化的方式帶領使用者一同探討、了解當今碳市場的動向。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/9.jpg",
+        "projectImg": "/logo2/9.jpg",
+        "groupImg": "/group/9.webp",
+        "groupMember": "黃思齊、徐嫚謙、丁煦芊、關煒培、李承恩",
+        "type": "code"
       },
       {
         "id": 8,
-        "title": "科技應用之數位教材 8",
-        "description": "簡介介紹 3",
-        "imageUrl": "/UFO.png",
-        "group": "第三組"
+        "title": "技續城市：生存之都",
+        "description": "「技續城市：生存之都」是一款以團隊合作為核心的教育性桌遊。在遊戲中，玩家將扮演不同的角色，如消防員、除蟲師、水電工和建築工人，合作解決城市中的各種危機，確保城市的生存和發展。通過應對火災、停電、建築倒塌和害蟲侵襲等挑戰，玩家需要共同努力，在指定時間內讓房屋保持完整，並最終用各自獲得的物資排名。",
+        "motive": "我們的製作動機是通過桌遊這種輕鬆有趣的方式，強調團隊合作的重要性，並將其應用於教育中。隨著現代社會對於團隊合作能力的需求不斷增長，我們希望通過這款遊戲，讓玩家在享受遊戲樂趣的同時，學會有效的溝通、協作和問題解決技巧，並提升個人及團隊的成長和績效。",
+        "detail": "地圖卡：展示城市及其各個區域。獎勵卡：玩家完成任務後獲得的獎勵。角色卡：玩家所扮演的角色，包含特定技能和能力。隨機事件卡：描述城市中突發的危機事件。遊戲玩法與機制： 每回合，玩家會抽出3間受災戶，並通過一回合三個行動去救援房屋。每經過幾個回合，會有隨機事件發生，增加遊戲的挑戰性和變數。遊戲的目標是在指定時間內確保20間房屋沒有損毀，並最終結算各玩家獲得的物資，物資多者獲勝。核心理念： 遊戲的核心理念是通過桌遊拉近人與人之間的距離，並在輕鬆有趣的氛圍中，讓玩家學習和體會團隊合作的重要性。透過設定具體的遊戲目標，玩家達成目標的過程中，間接地證明學會了團隊合作，達到教育的目的。",
+        "imageUrl": "/logo/12.png",
+        "projectImg": "/logo2/12.png",
+        "groupImg": "/group/12.webp",
+        "groupMember": "陳翰駿、林奕嫻、張博凱",
+        "type": "hr"
+      },
+      {
+        "id": 9,
+        "title": "星海尋航",
+        "description": "星海尋航是一款以MBTI為核心的桌遊；玩家們需透過自己各自擁有的特殊能力找到最有效的合作方式以完成任務。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/11.png",
+        "projectImg": "/logo2/11.png",
+        "groupImg": "/group/11.webp",
+        "groupMember": "盧梓銓、林志遠、邱致瑋、魏士凱",
+        "type": "hr"
+      },
+      {
+        "id": 10,
+        "title": "個人興趣取向大學選擇器",
+        "description": "本專題以可以解決現存指標的問題並能真正的為學生分配到適合科系為主目標, 透過進行有趣的遊戲讓學生可以在進行測試享受同時提供具參考的分析結果, 解決升學生的需求 ",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/6.png",
+        "projectImg": "/logo2/6.png",
+        "groupImg": "/group/6.webp",
+        "groupMember": "翁健哲、杜洺鋒、李承曄",
+        "type": "edu"
+      },
+      {
+        "id": 11,
+        "title": "銀 îng 作伙學台語",
+        "description": "銀 îng 作伙學台語是一個情境式銀髮族台語學習平台，以簡單清晰的介面設計，真實生活情境為背景，注重聽與說的練習，另針對錄音進行語音評分，讓使用者可檢視自我、激勵自己。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/10.png",
+        "projectImg": "/logo2/10.png",
+        "groupImg": "/group/10.webp",
+        "groupMember": "陳星、李米蕙、盧紫妍、吳亞蓉、古于育",
+        "type": "edu"
+      },
+      {
+        "id": 12,
+        "title": "專家系統虛擬實境",
+        "description": "本計畫將虛擬實境(VR)與專家系統結合，製作幫助學習者熟悉木工製作與原理及機具操作的學習情境。透過身歷其境的虛擬體驗，提升學習效果，降低真實環境中的風險，並節省資源。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/7.png",
+        "projectImg": "/logo2/7.png",
+        "groupImg": "/group/7.webp",
+        "groupMember": "陳淑鈃，王于萱，孫源智，葉芷伃，黃麟堯",
+        "type": "virtual"
+      },
+      {
+        "id": 13,
+        "title": "Ideashare - 高中生專案媒合平台",
+        "description": "希望大家可以讓自己的所思所想，不再只是「夢想」。而是有機會被實踐的。我們希望可以透過 Ideashare - 高中生專案媒合平台，讓高中生可以更順利的實踐夢想，不因為找不到夥伴而讓自己的夢想止步。",
+        "motive": "",
+        "detail": "",
+        "imageUrl": "/logo/2.svg",
+        "projectImg": "/logo2/2.png",
+        "groupImg": "/group/2.webp",
+        "groupMember": "張乃云、劉媞欣、簡珮軒、潘允蕙、胡亞莉",
+        "type": "edu"
       }
-    ]
+]
