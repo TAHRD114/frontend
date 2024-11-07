@@ -6,17 +6,17 @@ function IndividualIntervalsExample() {
     <>
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/5-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="nanum-myeongjo-regular">互動遊戲</h3>
+        <h3 className="noto-serif-tc-regular">互動遊戲</h3>
       </div>
       <Carousel>
         <Carousel.Item interval={3000}>
           <div className="bg-pink w-full h-80 flex justify-center items-center">
             <Link to="/puzzle_game" className="no-underline">
-              <button className="bg-dark-yellow text-nav-blue font-bold p-3 rounded flex items-center gap-2">
+              <button className="bg-dark-yellow text-nav-blue font-bold p-4 rounded flex items-center gap-2">
                 <img
-                  src="/puzzle.svg"
+                  src="/puzzle.png"
                   alt="interactive_game"
-                  className="w-10 h-10"
+                  className="w-12 h-12"
                 />
                 <span className="text-xl">馬上來玩！</span>
               </button>

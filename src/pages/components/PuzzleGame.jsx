@@ -25,7 +25,7 @@ function FixedNav() {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 回首頁
               </div>
             </div>
@@ -185,7 +185,7 @@ function App() {
       <div className="w-full flex justify-center items-center">
         {showTargetImage ? (
           <div className="flex justify-center items-center scale-75 md:w-[450px] md:h-[450px]">
-            <img src="/logo2.png" alt="目標圖片" />
+            <img src="/logo2.webp" alt="目標圖片" />
           </div>
         ) : (
           <div className="flex justify-center items-center scale-75 md:w-[450px] md:h-[450px]">

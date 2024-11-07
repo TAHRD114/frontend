@@ -19,7 +19,6 @@ code {
 
 .nanum-myeongjo-regular {
   font-family: "Nanum Myeongjo", serif;
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -30,15 +29,31 @@ code {
   font-style: normal;
 }
 
+.noto-serif-tc-regular {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .Yu-Mincho-Pr6n {
   font-family: yu-mincho-pr6n, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
 .Source-Han-Serif{
   font-family: source-han-serif-tw-subset, sans-serif;
   font-style: normal;
 }
+
+.noto-sans-tc-regular {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'ChenYuluoyan';
   src: url(/ChenYuluoyan-Thin.ttf);

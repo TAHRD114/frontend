@@ -1,6 +1,5 @@
-import Card from "react-bootstrap/Card";
-import data from "../data/project.json";
 import Nav from "./components/Nav";
+import IntroPage from "./components/Intro";
 import BlogPage from "./projects/BlogPage";
 import About from "./components/AboutPage";
 import TrafficInfo from "./components/TrafficInfo";
@@ -30,6 +29,7 @@ export default function Home() {
   };
 
   const homeRef = useRef(null);
+  const introRef = useRef(null);
   const blogRef = useRef(null);
   const trafficRef = useRef(null);
   const aboutRef = useRef(null);
@@ -43,9 +43,12 @@ export default function Home() {
     <>
       <Nav
         scrollTo={scrollTo}
-        refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef }}
+        refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef, introRef }}
       />
       <ScrollToAnchor />
+      <section id="intro" ref={introRef} className="pt-16 pb-6">
+        <IntroPage />
+      </section>
       <section id="blog" ref={blogRef} className="pt-16">
         <BlogPage />
       </section>

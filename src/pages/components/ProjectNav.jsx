@@ -32,9 +32,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  首頁
-                </div>
+                <div className="text-white noto-serif-tc-regular">頁首</div>
               </div>
             </Link>
             <hr className="my-1" />
@@ -47,9 +45,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  專題組員
-                </div>
+                <div className="text-white noto-serif-tc-regular">專題組員</div>
               </div>
             </Link>
             <hr className="my-1" />
@@ -62,9 +58,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  製作動機
-                </div>
+                <div className="text-white noto-serif-tc-regular">製作動機</div>
               </div>
             </Link>
             <hr className="my-1" />
@@ -77,9 +71,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  專題介紹
-                </div>
+                <div className="text-white noto-serif-tc-regular">專題介紹</div>
               </div>
             </Link>
             <hr className="my-1" />
@@ -92,9 +84,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
-                  照片紀錄
-                </div>
+                <div className="text-white noto-serif-tc-regular">照片紀錄</div>
               </div>
             </Link>
           </div>
@@ -128,8 +118,8 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
-                首頁
+              <div className="text-white noto-serif-tc-regular text-lg">
+                頁首
               </div>
             </div>
           </Link>
@@ -142,7 +132,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 專題組員
               </div>
             </div>
@@ -156,7 +146,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 製作動機
               </div>
             </div>
@@ -170,7 +160,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 專題介紹
               </div>
             </div>
@@ -184,7 +174,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 照片紀錄
               </div>
             </div>
@@ -198,7 +188,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 回作品集
               </div>
             </div>
@@ -274,9 +264,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
-              首頁
-            </div>
+            <div className="text-black noto-serif-tc-regular text-lg">頁首</div>
           </div>
         </Link>
         <Link
@@ -288,7 +276,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               專題組員
             </div>
           </div>
@@ -302,7 +290,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               製作動機
             </div>
           </div>
@@ -316,7 +304,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               專題介紹
             </div>
           </div>
@@ -330,7 +318,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               照片紀錄
             </div>
           </div>
