@@ -32,8 +32,23 @@ function ToggleMenu({ scrollTo, refs }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   首頁
+                </div>
+              </div>
+            </Link>
+            <hr className="my-1" />
+            <Link
+              to="/#introduction"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo(refs.introRef);
+              }}
+              className="no-underline h-full"
+            >
+              <div className="flex items-center h-full justify-center">
+                <div className="text-white noto-serif-tc-regular text-lg">
+                  專展介紹
                 </div>
               </div>
             </Link>
@@ -47,26 +62,12 @@ function ToggleMenu({ scrollTo, refs }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   作品集
                 </div>
               </div>
             </Link>
             <hr className="my-1" />
-            {/* <Link
-            to="/#project"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollTo(refs.projectRef);
-            }}
-            className="no-underline h-full"
-          >
-            <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
-                Project
-              </div>
-            </div>
-          </Link> */}
             <Link
               to="/#aboutUs"
               onClick={(e) => {
@@ -76,7 +77,7 @@ function ToggleMenu({ scrollTo, refs }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   交通資訊
                 </div>
               </div>
@@ -91,7 +92,7 @@ function ToggleMenu({ scrollTo, refs }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   關於科技系
                 </div>
               </div>
@@ -106,7 +107,7 @@ function ToggleMenu({ scrollTo, refs }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   互動遊戲
                 </div>
               </div>
@@ -142,8 +143,22 @@ function FixedNav({ scrollTo, refs }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 首頁
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/#introduction"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(refs.introRef);
+            }}
+            className="no-underline h-full"
+          >
+            <div className="flex items-center h-full justify-center">
+              <div className="text-white noto-serif-tc-regular text-lg">
+                專展介紹
               </div>
             </div>
           </Link>
@@ -156,25 +171,11 @@ function FixedNav({ scrollTo, refs }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 作品集
               </div>
             </div>
           </Link>
-          {/* <Link
-            to="/#project"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollTo(refs.projectRef);
-            }}
-            className="no-underline h-full"
-          >
-            <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
-                Project
-              </div>
-            </div>
-          </Link> */}
           <Link
             to="/#aboutUs"
             onClick={(e) => {
@@ -184,7 +185,7 @@ function FixedNav({ scrollTo, refs }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 交通資訊
               </div>
             </div>
@@ -198,7 +199,7 @@ function FixedNav({ scrollTo, refs }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 關於科技系
               </div>
             </div>
@@ -212,7 +213,7 @@ function FixedNav({ scrollTo, refs }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 互動遊戲
               </div>
             </div>
@@ -246,7 +247,7 @@ function MainNav({ scrollTo, refs }) {
   };
   return (
     <div style={style} className="w-full">
-      <div style={backgroundStyle} className="h-3/4 md:h-screen"></div>
+      <div style={backgroundStyle} className="h-screen"></div>
       <div className="flex justify-between items-center w-full">
         <Link to={"/"} className="pt-4 ml-1/20 no-underline text-black">
           <div className="flex items-center gap-4">
@@ -295,8 +296,20 @@ function MainNav({ scrollTo, refs }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
-              首頁
+            <div className="text-black noto-serif-tc-regular text-lg">首頁</div>
+          </div>
+        </Link>
+        <Link
+          to="/#introduction"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo(refs.introRef);
+          }}
+          className="no-underline h-full"
+        >
+          <div className="flex items-center h-full justify-center">
+            <div className="text-black noto-serif-tc-regular text-lg">
+              專展介紹
             </div>
           </div>
         </Link>
@@ -309,25 +322,11 @@ function MainNav({ scrollTo, refs }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               作品集
             </div>
           </div>
         </Link>
-        {/* <Link
-          to="/#project"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollTo(refs.projectRef);
-          }}
-          className="no-underline h-full"
-        >
-          <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
-              Project
-            </div>
-          </div>
-        </Link> */}
         <Link
           to="/#aboutUs"
           onClick={(e) => {
@@ -337,7 +336,7 @@ function MainNav({ scrollTo, refs }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               交通資訊
             </div>
           </div>
@@ -351,7 +350,7 @@ function MainNav({ scrollTo, refs }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               關於科技系
             </div>
           </div>
@@ -365,13 +364,13 @@ function MainNav({ scrollTo, refs }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               互動遊戲
             </div>
           </div>
         </Link>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div className="w-3/4 mx-auto  md:w-1/2">
           <div className="relative w-full pb-[100%] md:pb-[75%]">
             <img
@@ -381,12 +380,17 @@ function MainNav({ scrollTo, refs }) {
             />
           </div>
         </div>
-        <div className="w-1/2 mt-1/8 text-indigo-700 hidden md:block">
-          <div className="w-2/3 flex flex-col justify-start items-start">
-            <h4 className="font-bold">TAHRD</h4>
-            <p className="text-2xl font-bold text-left">
-              "Technology is not just a tool. It can give learners a voice that
-              they may not have had before." - George Couros
+        <div className="md:w-1/2 mt-1/8">
+          <div className="w-full md:w-2/3 flex flex-col justify-start items-start mt-16 ml-1/5">
+            <p className="text-xl md:text-3xl font-extrabold text-left text-nav-blue noto-serif-tc-regular ">
+              2024
+              <br />
+              國立臺灣師範大學
+              <br />
+              科技應用與人力資源發展學系
+            </p>
+            <p className="text-2xl md:text-4xl font-extrabold text-left text-nav-blue noto-serif-tc-regular">
+              114級畢業專題展覽
             </p>
           </div>
         </div>

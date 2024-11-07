@@ -3,7 +3,7 @@ export default function About() {
     <>
       <div className="flex items-center ml-1/20 mt-12">
         <img src="/icon/6-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="nanum-myeongjo-regular">交通資訊</h3>
+        <h3 className="noto-serif-tc-regular">交通資訊</h3>
       </div>
       <div className="mx-auto w-4/5">
         <div className="flex flex-col md:flex-row gap-4 mt-4">
@@ -13,9 +13,9 @@ export default function About() {
               style={{ border: 0 }}
               width="100%"
               height="100%"
-              allowfullscreen
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
@@ -26,7 +26,7 @@ export default function About() {
             </div>
             <div className="ml-1/10">
               <p className="Source-Han-Serif font-semibold">
-                2024年12月06日(五) 12:30 ~ 18:00
+                2024年12月06日(五) 13:00 ~ 19:00
               </p>
               <p className="Source-Han-Serif font-semibold">
                 2024年12月07日(六) 08:30 ~ 15:30
@@ -37,7 +37,9 @@ export default function About() {
               <h4 className="text-nav-blue font-bold Source-Han-Serif">地址</h4>
             </div>
             <p className="Source-Han-Serif ml-1/10 font-semibold">
-              台北市大安區和平東路一段135號
+              台北市大安區和平東路一段129號
+              <br />
+              綜210 展演廳
             </p>
             <div className="flex gap-2">
               <img src="/car.svg" alt="icon" className="w-8 h-8" />
@@ -45,12 +47,17 @@ export default function About() {
             </div>
             <div className="Source-Han-Serif ml-1/10 font-semibold">
               <p>
-                1. 捷運古亭站:
-                中和新蘆線(橘線)、松山新店線(綠線)於『古亭站』5號出口直行約八分鐘可抵達校區大門。
+                1. 由捷運古亭站出發： 中和新蘆線(橘線)、松山新店線(綠線)
+                <br />
+                出站：5號出口
+                <br />
+                步行：直行約十分鐘可抵達圖書館校區綜合大樓，入口位於師大路與和平東路交叉口附近，依照指示地貼進入大樓後，前往2樓210會議室。
               </p>
               <p>
-                2. 捷運台電大樓站:
-                松山新店線(綠線)於『台電大樓站』3號出口，師大路直行約十分鐘後在和平東路一段左轉即可抵達校區大門。
+                2. 由捷運台電大樓站出發： 松山新店線(綠線) <br />
+                出站：3號出口
+                <br />
+                步行：從師大路直行約十分鐘，可抵達圖書館校區綜合大樓，入口位於師大路與和平東路交叉口附近，依照指示地貼進入大樓後，前往2樓210會議室。
               </p>
             </div>
           </div>

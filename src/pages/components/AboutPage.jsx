@@ -3,9 +3,9 @@ export default function About() {
     <>
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/4-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="nanum-myeongjo-regular">關於科技系</h3>
+        <h3 className="noto-serif-tc-regular">關於科技系</h3>
       </div>
-      <div className="mx-auto w-4/5 ">
+      <div className="mx-auto w-4/5 font-bold">
         <p>
           本系根源於民國４２年所成立的工業教育系「工藝教育組」，專責培育我國中學「工藝」課程之師資，配合課程內涵之調整與修訂，在民國６１年更名為「工業技術教育組」，並於民國７１年正式獨立設系為「工藝教育學系」，為配合學校藝術學院成立，本系隸屬於藝術學院。
         </p>

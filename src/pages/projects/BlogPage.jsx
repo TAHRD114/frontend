@@ -11,51 +11,41 @@ function TypeTabs({ onSelect }) {
     onSelect(key);
   };
 
+  const buttonClassName = (key, currentKey) =>
+    `hover:bg-tab-blue font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full transition-all duration-300 ease-in-out ${
+      key === currentKey ? "bg-tab-blue text-nav-blue" : "text-white"
+    }`;
+
   return (
-    <div className="bg-nav-blue w-full p-2 rounded-2xl">
+    <div className="bg-nav-blue w-full md:w-4/5 p-2 rounded-2xl">
       <div className="flex justify-center gap-2 md:gap-4">
         <button
-          className={` hover:bg-dark-yellow font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full ${
-            key === "code" ? "bg-dark-yellow text-nav-blue" : "text-white"
-          }`}
+          className={buttonClassName("code", key)}
           onClick={() => handleSelect("code")}
-          style={{ transition: "all 0.3s ease" }}
         >
           軟體開發
         </button>
         <button
-          className={`hover:bg-dark-yellow font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full ${
-            key === "virtual" ? "bg-dark-yellow text-nav-blue" : "text-white"
-          }`}
+          className={buttonClassName("virtual", key)}
           onClick={() => handleSelect("virtual")}
-          style={{ transition: "all 0.3s ease" }}
         >
           虛擬實境
         </button>
         <button
-          className={` hover:bg-dark-yellow font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full ${
-            key === "product" ? "bg-dark-yellow text-nav-blue" : "text-white"
-          }`}
+          className={buttonClassName("product", key)}
           onClick={() => handleSelect("product")}
-          style={{ transition: "all 0.3s ease" }}
         >
           產品設計
         </button>
         <button
-          className={` hover:bg-dark-yellow font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full ${
-            key === "edu" ? "bg-dark-yellow text-nav-blue" : "text-white"
-          }`}
+          className={buttonClassName("edu", key)}
           onClick={() => handleSelect("edu")}
-          style={{ transition: "all 0.3s ease" }}
         >
           教育導向
         </button>
         <button
-          className={` hover:bg-dark-yellow font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full ${
-            key === "hr" ? "bg-dark-yellow text-nav-blue" : "text-white"
-          }`}
+          className={buttonClassName("hr", key)}
           onClick={() => handleSelect("hr")}
-          style={{ transition: "all 0.3s ease" }}
         >
           人資桌遊
         </button>
@@ -77,9 +67,9 @@ const Blog = () => {
     <div className="App">
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/2-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="nanum-myeongjo-regular">作品集</h3>
+        <h3 className="noto-serif-tc-regular">作品集</h3>
       </div>
-      <div className="projects w-10/12 md:w-2/3">
+      <div className="projects">
         <TypeTabs onSelect={handleTypeSelect} />
         {filteredData.map((project, index) => (
           <ProjectCard
