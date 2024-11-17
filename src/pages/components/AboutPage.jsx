@@ -1,9 +1,11 @@
+import { TypeWriter } from "./Animation";
+
 export default function About() {
   return (
     <>
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/4-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="noto-serif-tc-regular">關於科技系</h3>
+        <TypeWriter text="關於科技系" />
       </div>
       <div className="mx-auto w-4/5 font-bold">
         <p>

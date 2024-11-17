@@ -2,6 +2,7 @@ import "./BlogPage.css";
 import ProjectCard from "./ProjectCard";
 import data from "../../data/project.json";
 import { useState } from "react";
+import { TypeWriter } from "../components/Animation";
 
 function TypeTabs({ onSelect }) {
   const [key, setKey] = useState("code");
@@ -12,7 +13,7 @@ function TypeTabs({ onSelect }) {
   };
 
   const buttonClassName = (key, currentKey) =>
-    `hover:bg-tab-blue font-bold w-1/5 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full transition-all duration-300 ease-in-out ${
+    `hover:bg-tab-blue font-bold w-14 h-14 md:w-1/5 md:h-12 p-2 text-sm md:text-base md:py-2 md:px-4 rounded-full transition-all duration-300 ease-in-out ${
       key === currentKey ? "bg-tab-blue text-nav-blue" : "text-white"
     }`;
 
@@ -67,7 +68,7 @@ const Blog = () => {
     <div className="App">
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/2-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="noto-serif-tc-regular">作品集</h3>
+        <TypeWriter text="作品集" />
       </div>
       <div className="projects">
         <TypeTabs onSelect={handleTypeSelect} />

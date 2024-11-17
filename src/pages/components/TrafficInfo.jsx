@@ -1,9 +1,11 @@
+import { TypeWriter } from "./Animation";
+
 export default function About() {
   return (
     <>
       <div className="flex items-center ml-1/20 mt-12">
         <img src="/icon/6-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="noto-serif-tc-regular">交通資訊</h3>
+        <TypeWriter text="交通資訊" />
       </div>
       <div className="mx-auto w-4/5">
         <div className="flex flex-col md:flex-row gap-4 mt-4">

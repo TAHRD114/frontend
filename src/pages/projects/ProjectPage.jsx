@@ -3,6 +3,7 @@ import { useEffect, useState, lazy, Suspense, useRef } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import ProjectNav from "../components/ProjectNav";
 import Loading from "../components/loading";
+import { AnimatedHR } from "../components/Animation";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -82,7 +83,7 @@ export default function ProjectPage() {
       <h1 className="mt-4 text-center ChenYuluoyan text-4xl w-4/5 mx-auto md:w-full md:text-5xl">
         {project.title}
       </h1>
-      <div className="w-4/5 mx-auto md:w-2/5 ink-box">
+      <div className="w-4/5 mx-auto md:w-1/3 ink-box">
         {/* <div className="box-inner"> */}
         <img
           src={project.projectImg}
@@ -91,16 +92,11 @@ export default function ProjectPage() {
         />
         {/* </div> */}
       </div>
-      {/* <img
-        src="/component/2.webp"
-        alt="icon"
-        className="absolute right-0 bottom-0 w-1/3 "
-      /> */}
       <section id="member" ref={memberRef} className="pt-24">
         <div className="w-5/6 mx-auto">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">專題組員</h3>
-            <hr className="my-1 w-20" />
+            <AnimatedHR id="hr-member" className="my-1 w-20" />
             <div className="w-full md:w-2/3 md:h-1/2 overflow-hidden text-center">
               <img
                 src={project.groupImg}
@@ -109,16 +105,16 @@ export default function ProjectPage() {
               />
 
               <p className="Yu-Mincho-Pr6n">{project.groupMember}</p>
-              <p>（由左至右）</p>
+              <p className="text-sm">（由左至右）</p>
             </div>
           </div>
         </div>
       </section>
       <section id="motive" ref={motiveRef} className="pt-24">
-        <div className="w-5/6 mx-auto">
+        <div className="w-5/6 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">製作動機</h3>
-            <hr className="my-1 w-20" />
+            <AnimatedHR id="hr-motive" className="my-1 w-20" />
           </div>
           <Suspense fallback={<Loading />}>{Component && <Motive />}</Suspense>
         </div>
@@ -127,7 +123,7 @@ export default function ProjectPage() {
         <div className="w-5/6 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">專題介紹</h3>
-            <hr className="my-1 w-20" />
+            <AnimatedHR id="hr-intro" className="my-1 w-20" />
           </div>
           <Suspense fallback={<Loading />}>
             {Component && <Component />}
