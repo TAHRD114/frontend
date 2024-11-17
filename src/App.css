@@ -33,7 +33,6 @@ body {
   color: #61dafb;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -54,12 +53,14 @@ body {
 }
 
 @keyframes stretchdelay {
-0%, 40%, 100% { 
+  0%,
+  40%,
+  100% {
     transform: translateY(0px);
-}
-20% {
+  }
+  20% {
     transform: translateY(-10px);
-}
+  }
 }
 
 .preloader .circ1 {
@@ -76,4 +77,18 @@ body {
 
 .preloader .circ4 {
   animation-delay: 0.3s;
+}
+
+#content::after {
+  content: "|";
+  color: darkgray;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -6,6 +6,7 @@ import TrafficInfo from "./components/TrafficInfo";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Slide from "./components/Slide";
+import Sponsor from "./components/Sponsor";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -45,6 +46,9 @@ export default function Home() {
         scrollTo={scrollTo}
         refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef, introRef }}
       />
+      <section id="sponsor" className="pt-16">
+        <Sponsor />
+      </section>
       <ScrollToAnchor />
       <section id="intro" ref={introRef} className="pt-16 pb-6">
         <IntroPage />

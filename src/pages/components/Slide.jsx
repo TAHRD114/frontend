@@ -1,12 +1,13 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import { TypeWriter } from "./Animation";
 
 function IndividualIntervalsExample() {
   return (
     <>
       <div className="flex mt-12 ml-1/20 items-center">
         <img src="/icon/5-05.png" alt="icon" className="w-20 h-20" />
-        <h3 className="noto-serif-tc-regular">互動遊戲</h3>
+        <TypeWriter text="互動遊戲" />
       </div>
       <Carousel>
         <Carousel.Item interval={3000}>

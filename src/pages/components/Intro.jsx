@@ -1,3 +1,5 @@
+import { TypeWriter } from "./Animation";
+
 export default function Intro() {
   const backgroundImageUrl = "url(/introBg.webp)";
   const backgroundStyle = {
@@ -18,7 +20,7 @@ export default function Intro() {
       <div className="relative w-full h-screen">
         <div className="flex items-center ml-1/20 mt-8 relative z-10">
           <img src="/icon/6-05.png" alt="icon" className="w-20 h-20" />
-          <h3 className="noto-serif-tc-regular">專展介紹</h3>
+          <TypeWriter text="專展介紹" />
         </div>
         <div style={backgroundStyle}>
           <div className="mx-auto w-4/5 relative z-10 mt-1/6 md:mt-0">
