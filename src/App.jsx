@@ -6,6 +6,7 @@ import "./App.css";
 import Loading from "./pages/components/loading";
 import ProjectPage from "./pages/projects/ProjectPage";
 import PuzzleGame from "./pages/components/PuzzleGame";
+import Vote from "./pages/components/Vote";
 
 function App() {
   const [blogRef, setBlogRef] = React.useState(null);
@@ -23,6 +24,7 @@ function App() {
           />
           <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="/puzzle_game" element={<PuzzleGame />} />
+          <Route path="/vote" element={<Vote />} />
         </Routes>
         <Footer />
       </div>
