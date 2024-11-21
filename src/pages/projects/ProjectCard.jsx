@@ -59,8 +59,8 @@ function ProjectCard({ id, title, description, imageUrl, isEven }) {
                   <h2
                     style={{
                       color: "rgba(161, 177, 188, 1)",
-                      fontWeight: "bolder",
                     }}
+                    className="text-center font-bolder"
                   >
                     {title}
                   </h2>
@@ -68,12 +68,14 @@ function ProjectCard({ id, title, description, imageUrl, isEven }) {
                     {description}
                   </p>
                 </div>
-                <div className="flex justify-center items-center w-1/3 overflow-hidden mr-2">
-                  <img
-                    src={imageUrl}
-                    alt={title}
-                    className="bg-contain w-full h-full rounded-lg"
-                  />
+                <div className="flex justify-center items-center w-1/3">
+                  <div className="h-48">
+                    <img
+                      src={imageUrl}
+                      alt={title}
+                      className="max-h-48 rounded-lg aspect-square object-cover position-center"
+                    />
+                  </div>
                 </div>
               </div>
             </Link>
@@ -83,19 +85,21 @@ function ProjectCard({ id, title, description, imageUrl, isEven }) {
               className="no-underline text-black bg-white w-full"
             >
               <div className="flex h-52 w-full max-w-full mx-auto">
-                <div className="flex justify-center items-center w-1/3 ml-2 h-full">
-                  <img
-                    src={imageUrl}
-                    alt={title}
-                    className="w-full h-full rounded-lg object-contain"
-                  />
+                <div className="flex justify-center items-center w-1/3">
+                  <div className="h-48">
+                    <img
+                      src={imageUrl}
+                      alt={title}
+                      className="max-h-48 rounded-lg aspect-square object-cover position-center"
+                    />
+                  </div>
                 </div>
                 <div className="project-info w-2/3">
                   <h2
                     style={{
                       color: "rgba(161, 177, 188, 1)",
-                      fontWeight: "bolder",
                     }}
+                    className="text-center font-bolder"
                   >
                     {title}
                   </h2>
