@@ -65,10 +65,10 @@ const Blog = () => {
   const filteredData = data.filter((project) => project.type === selectedType);
 
   return (
-    <div className="App">
-      <div className="flex mt-12 ml-1/20 items-center">
-        <img src="/icon/2-05.png" alt="icon" className="w-20 h-20" />
-        <TypeWriter text="作品集" />
+    <div className="bg-nav-blue">
+      <div className="flex pt-12 ml-1/20 items-center ">
+        <img src="/icon/1-05.png" alt="icon" className="w-20 h-20" />
+        <TypeWriter text="作品集" className="text-tab-blue" />
       </div>
       <div className="projects">
         <TypeTabs onSelect={handleTypeSelect} />

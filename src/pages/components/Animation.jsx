@@ -46,7 +46,7 @@ export const AnimatedHR = ({
   );
 };
 
-export const TypeWriter = ({ text = "", speed = 200 }) => {
+export const TypeWriter = ({ text = "", speed = 200, className }) => {
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -89,7 +89,7 @@ export const TypeWriter = ({ text = "", speed = 200 }) => {
   return (
     <h3
       ref={elementRef}
-      className="min-h-[20px] noto-serif-tc-regular"
+      className={`min-h-[20px] noto-serif-tc-regular ${className}`}
       id="content"
     >
       {displayText}

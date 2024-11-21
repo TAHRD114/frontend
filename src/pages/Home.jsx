@@ -50,10 +50,10 @@ export default function Home() {
         <Sponsor />
       </section>
       <ScrollToAnchor />
-      <section id="intro" ref={introRef} className="pt-16 pb-6">
+      <section id="intro" ref={introRef} className="pt-16 mb-12 md:pb-6">
         <IntroPage />
       </section>
-      <section id="blog" ref={blogRef} className="pt-16">
+      <section id="blog" ref={blogRef} className="pt-16 ">
         <BlogPage />
       </section>
       <section id="traffic" ref={trafficRef} className="pt-16">

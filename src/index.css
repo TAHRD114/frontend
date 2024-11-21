@@ -31,7 +31,6 @@ code {
 
 .noto-serif-tc-regular {
   font-family: "Noto Serif TC", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -47,12 +46,6 @@ code {
   font-style: normal;
 }
 
-.noto-sans-tc-regular {
-  font-family: "Noto Sans TC", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'ChenYuluoyan';

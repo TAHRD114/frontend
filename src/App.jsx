@@ -14,17 +14,11 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <main>
-                <Home />
-              </main>
-            }
-          />
+          <Route path="/" element={<Home />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="/puzzle_game" element={<PuzzleGame />} />
           <Route path="/vote" element={<Vote />} />
+          <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </div>
