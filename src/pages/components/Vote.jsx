@@ -61,6 +61,9 @@ function VotingSystem() {
         setHasVoted(true);
         setError("");
         alert("感謝您的投票！");
+      } else if (result.message === "序號已投過票。") {
+        setError(result.message);
+        alert("序號已投過票。");
       } else {
         setError(result.message || "提交失敗，請稍後再試。");
       }
