@@ -24,7 +24,7 @@ function VotingSystem() {
     setOptions(options);
   }, []);
 
-  const validateSerialNumber = (number) => /^[A-Z0-9]{8}$/.test(number); // 8位字母和數字
+  const validateSerialNumber = (number) => /^[A-Z0-9]{8}$/.test(number);
 
   const handleSubmit = async () => {
     if (!validateSerialNumber(serialNumber)) {
@@ -61,8 +61,15 @@ function VotingSystem() {
         setHasVoted(true);
         setError("");
         alert("感謝您的投票！");
+      } else if (result.message === "此序號已經投過票。") {
+        setError(result.message);
+        alert("此序號已經投過票。");
+      } else if (result.message === "序號無效。") {
+        setError(result.message);
+        alert("序號無效。");
       } else {
         setError(result.message || "提交失敗，請稍後再試。");
+        console.log(result.message);
       }
     } catch (err) {
       setError("提交失敗，請檢查網路連線並稍後再試。");
@@ -117,7 +124,7 @@ function VotingSystem() {
               step={1}
               required
               value={serialNumber}
-              onChange={(e) => setSerialNumber(e.target.value)}
+              onChange={(e) => setSerialNumber(e.target.value.toUpperCase())}
             />
           </div>
         </div>
