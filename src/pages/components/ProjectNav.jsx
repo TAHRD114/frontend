@@ -76,15 +76,15 @@ function ToggleMenu({ scrollTo, refs, id }) {
             </Link>
             <hr className="my-1" />
             <Link
-              to="/#"
+              to={`/projects/${id}/#record`}
               onClick={(e) => {
                 e.preventDefault();
-                scrollTo(refs.aboutRef);
+                scrollTo(refs.recordRef);
               }}
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white noto-serif-tc-regular">照片紀錄</div>
+                <div className="text-white noto-serif-tc-regular">相關連結</div>
               </div>
             </Link>
           </div>
@@ -166,38 +166,10 @@ function FixedNav({ scrollTo, refs, id }) {
             </div>
           </Link>
           <Link
-            to="/#"
+            to={`/projects/${id}/#record`}
             onClick={(e) => {
               e.preventDefault();
-              scrollTo(refs.aboutRef);
-            }}
-            className="no-underline h-full"
-          >
-            <div className="flex items-center h-full justify-center">
-              <div className="text-white noto-serif-tc-regular text-lg">
-                照片紀錄
-              </div>
-            </div>
-          </Link>
-          {/* <Link
-            to="/#blog"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollTo(refs.blogRef);
-            }}
-            className="no-underline h-full"
-          >
-            <div className="flex items-center h-full justify-center">
-              <div className="text-white noto-serif-tc-regular text-lg">
-                回作品集
-              </div>
-            </div>
-          </Link> */}
-          {/* <Link
-            to="/#aboutUs"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollTo(refs.aboutRef);
+              scrollTo(refs.recordRef);
             }}
             className="no-underline h-full"
           >
@@ -206,7 +178,7 @@ function FixedNav({ scrollTo, refs, id }) {
                 相關連結
               </div>
             </div>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </>
@@ -310,38 +282,10 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           </div>
         </Link>
         <Link
-          to="/#"
+          to={`/projects/${id}/#record`}
           onClick={(e) => {
             e.preventDefault();
-            scrollTo(refs.introRef);
-          }}
-          className="no-underline h-full"
-        >
-          <div className="flex items-center h-full justify-center">
-            <div className="text-black noto-serif-tc-regular text-lg">
-              照片紀錄
-            </div>
-          </div>
-        </Link>
-        {/* <Link
-          to="/#blog"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollTo(refs.blogRef);
-          }}
-          className="no-underline h-full"
-        >
-          <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
-              回作品集
-            </div>
-          </div>
-        </Link> */}
-        {/* <Link
-          to="/#aboutUs"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollTo(refs.aboutRef);
+            scrollTo(refs.recordRef);
           }}
           className="no-underline h-full"
         >
@@ -350,7 +294,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
               相關連結
             </div>
           </div>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

@@ -36,19 +36,12 @@ export default function Home() {
   const aboutRef = useRef(null);
   const gameRef = useRef(null);
 
-  // useEffect(() => {
-  //   setBlogRef(blogRef);
-  // }, [blogRef, setBlogRef]);
-
   return (
     <>
       <Nav
         scrollTo={scrollTo}
         refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef, introRef }}
       />
-      <section id="sponsor" className="pt-16">
-        <Sponsor />
-      </section>
       <ScrollToAnchor />
       <section id="intro" ref={introRef} className="pt-16 mb-12 md:pb-6">
         <IntroPage />
@@ -64,6 +57,9 @@ export default function Home() {
       </section>
       <section id="game" ref={gameRef} className="pt-16 pb-16">
         <Slide />
+      </section>
+      <section id="sponsor" className="pt-16">
+        <Sponsor />
       </section>
     </>
   );
