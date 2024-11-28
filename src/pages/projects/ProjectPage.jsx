@@ -15,6 +15,8 @@ function ScrollToAnchor() {
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
 
@@ -35,7 +37,6 @@ export default function ProjectPage() {
   const motiveRef = useRef(null);
   const introRef = useRef(null);
   const recordRef = useRef(null);
-  //const gameRef = useRef(null);
 
   useEffect(() => {
     const loadComponent = async () => {
@@ -77,7 +78,6 @@ export default function ProjectPage() {
         scrollTo={scrollTo}
         refs={{ memberRef, motiveRef, introRef, recordRef }}
         id={id}
-        // blogRef={blogRef}
       />
       <ScrollToAnchor />
       <h1 className="mt-4 text-center ChenYuluoyan text-4xl w-4/5 mx-auto md:w-full md:text-5xl">
@@ -111,7 +111,7 @@ export default function ProjectPage() {
         </div>
       </section>
       <section id="motive" ref={motiveRef} className="pt-24">
-        <div className="w-5/6 mx-auto text-center">
+        <div className="w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">製作動機</h3>
             <AnimatedHR id="hr-motive" className="my-1 w-20" />
@@ -120,7 +120,7 @@ export default function ProjectPage() {
         </div>
       </section>
       <section id="intro" ref={introRef} className="pt-24">
-        <div className="w-5/6 mx-auto text-center">
+        <div className="w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">專題介紹</h3>
             <AnimatedHR id="hr-intro" className="my-1 w-20" />
@@ -128,6 +128,27 @@ export default function ProjectPage() {
           <Suspense fallback={<Loading />}>
             {Component && <Component />}
           </Suspense>
+        </div>
+      </section>
+      <section id="record" ref={recordRef} className="pt-24 pb-12">
+        <div className="w-1/2 mx-auto text-center">
+          <div className="flex flex-col justify-center items-center mb-4">
+            <h3 className="text-nav-blue ">相關連結</h3>
+            <AnimatedHR id="hr-record" className="my-1 w-20" />
+          </div>
+
+          {project.Link && (
+            <div className="w-1/2 mx-auto text-center">
+              <a
+                href={project.Link}
+                className="text-nav-blue no-underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                前往專題網站
+              </a>
+            </div>
+          )}
         </div>
       </section>
     </>

@@ -18,12 +18,13 @@
         "projectImg": "/logo2/13.png",
         "groupImg": "/group/13.webp",
         "groupMember": "林鈺茹、李苡嘉、王依仁、柯幸孜、陳思岑",
-        "type": "code"
+        "type": "code",
+        "Link": "https://pantry-pal.site/"
       },
       {
         "id": 3,
         "title": "便攜式露營冰箱",
-        "description": "便攜式露營用冰箱是融合「便攜帶、易收納、好清潔」等概念的冰箱；此產品以致冷晶片系統、組裝式、模組化等特色進行實作，以滿足概念與露營的便攜設計。",
+        "description": "便攜式露營用冰箱是融合「便攜帶、易收納、好清潔」等概念的冰箱；此產品以致冷晶片系統、組裝式等特色進行實作，以滿足概念與露營的便攜設計。",
         "imageUrl": "/logo/5.png",
         "projectImg": "/logo2/5.png",
         "groupImg": "/group/5.webp",
