@@ -111,7 +111,7 @@ export default function ProjectPage() {
         </div>
       </section>
       <section id="motive" ref={motiveRef} className="pt-24">
-        <div className="w-1/2 mx-auto text-center">
+        <div className="w-2/3 md:w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">製作動機</h3>
             <AnimatedHR id="hr-motive" className="my-1 w-20" />
@@ -120,7 +120,7 @@ export default function ProjectPage() {
         </div>
       </section>
       <section id="intro" ref={introRef} className="pt-24">
-        <div className="w-1/2 mx-auto text-center">
+        <div className="w-2/3 md:w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">專題介紹</h3>
             <AnimatedHR id="hr-intro" className="my-1 w-20" />
@@ -131,7 +131,7 @@ export default function ProjectPage() {
         </div>
       </section>
       <section id="record" ref={recordRef} className="pt-24 pb-12">
-        <div className="w-1/2 mx-auto text-center">
+        <div className="w-2/3 md:w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">相關連結</h3>
             <AnimatedHR id="hr-record" className="my-1 w-20" />
