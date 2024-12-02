@@ -174,7 +174,7 @@ function FixedNav({ scrollTo, refs, id }) {
             className="no-underline h-full"
           >
             <div className="flex items-center h-full justify-center">
-              <div className="text-white nanum-myeongjo-regular text-lg">
+              <div className="text-white noto-serif-tc-regular text-lg">
                 相關連結
               </div>
             </div>
@@ -290,7 +290,7 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           className="no-underline h-full"
         >
           <div className="flex items-center h-full justify-center">
-            <div className="text-black nanum-myeongjo-regular text-lg">
+            <div className="text-black noto-serif-tc-regular text-lg">
               相關連結
             </div>
           </div>
