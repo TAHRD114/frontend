@@ -87,7 +87,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
               className="no-underline h-full"
             >
               <div className="flex items-center h-full justify-center">
-                <div className="text-white nanum-myeongjo-regular text-lg">
+                <div className="text-white noto-serif-tc-regular text-lg">
                   相關照片
                 </div>
               </div>
