@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import FB from "../../assets/icon/facebook.svg";
+import IG from "../../assets/icon/instagram.svg";
+import Menu from "../../assets/icon/menu.svg";
 
 function ToggleMenu({ scrollTo, refs, id }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +18,7 @@ function ToggleMenu({ scrollTo, refs, id }) {
   return (
     <div className="relative mr-2 md:hidden block">
       <button onClick={handleClick} className="flex items-center">
-        <img alt="menu" src="/menu.svg" className="w-8 h-8" />
+        <img alt="menu" src={Menu} className="w-8 h-8" />
       </button>
       {isOpen && (
         <div
@@ -72,6 +75,21 @@ function ToggleMenu({ scrollTo, refs, id }) {
             >
               <div className="flex items-center h-full justify-center">
                 <div className="text-white noto-serif-tc-regular">專題介紹</div>
+              </div>
+            </Link>
+            <hr className="my-1" />
+            <Link
+              to={`/projects/${id}/#img`}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo(refs.imgRef);
+              }}
+              className="no-underline h-full"
+            >
+              <div className="flex items-center h-full justify-center">
+                <div className="text-white nanum-myeongjo-regular text-lg">
+                  相關照片
+                </div>
               </div>
             </Link>
             <hr className="my-1" />
@@ -166,6 +184,20 @@ function FixedNav({ scrollTo, refs, id }) {
             </div>
           </Link>
           <Link
+            to={`/projects/${id}/#img`}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(refs.imgRef);
+            }}
+            className="no-underline h-full"
+          >
+            <div className="flex items-center h-full justify-center">
+              <div className="text-white noto-serif-tc-regular text-lg">
+                相關照片
+              </div>
+            </div>
+          </Link>
+          <Link
             to={`/projects/${id}/#record`}
             onClick={(e) => {
               e.preventDefault();
@@ -213,14 +245,14 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
               href="https://www.instagram.com/ntnutahrd114_thyj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               className="ms-3 text-black"
             >
-              <img src="/instagram.svg" alt="instagram" className="w-8 h-8" />
+              <img src={IG} alt="instagram" className="w-8 h-8" />
               <span className="sr-only">instagram page</span>
             </a>
             <a
               href="https://www.facebook.com/tahrdgraduationexhibition"
               className=""
             >
-              <img src="/facebook.svg" alt="facebook" className="w-8 h-8" />
+              <img src={FB} alt="facebook" className="w-8 h-8" />
               <span className="sr-only">Facebook page</span>
             </a>
           </div>
@@ -278,6 +310,20 @@ function MainNav({ scrollTo, refs, id, blogRef }) {
           <div className="flex items-center h-full justify-center">
             <div className="text-black noto-serif-tc-regular text-lg">
               專題介紹
+            </div>
+          </div>
+        </Link>
+        <Link
+          to={`/projects/${id}/#img`}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo(refs.imgRef);
+          }}
+          className="no-underline h-full"
+        >
+          <div className="flex items-center h-full justify-center">
+            <div className="text-black noto-serif-tc-regular text-lg">
+              相關照片
             </div>
           </div>
         </Link>

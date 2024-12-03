@@ -1,4 +1,7 @@
 import { TypeWriter } from "./Animation";
+import Address from "../../assets/icon/address.svg";
+import Car from "../../assets/icon/car.svg";
+import Time from "../../assets/icon/time.svg";
 
 export default function About() {
   return (
@@ -23,7 +26,7 @@ export default function About() {
 
           <div className="w-full md:w-1/2">
             <div className="flex gap-2">
-              <img src="/time.svg" alt="icon" className="w-8 h-8" />
+              <img src={Time} alt="icon" className="w-8 h-8" />
               <h4 className="text-nav-blue font-bold Source-Han-Serif">時間</h4>
             </div>
             <div className="ml-1/10">
@@ -35,7 +38,7 @@ export default function About() {
               </p>
             </div>
             <div className="flex gap-2">
-              <img src="/address.svg" alt="icon" className="w-8 h-8" />
+              <img src={Address} alt="icon" className="w-8 h-8" />
               <h4 className="text-nav-blue font-bold Source-Han-Serif">地址</h4>
             </div>
             <p className="Source-Han-Serif ml-1/10 font-semibold">
@@ -44,7 +47,7 @@ export default function About() {
               綜210 展演廳
             </p>
             <div className="flex gap-2">
-              <img src="/car.svg" alt="icon" className="w-8 h-8" />
+              <img src={Car} alt="icon" className="w-8 h-8" />
               <h4 className="text-nav-blue font-bold">交通方式</h4>
             </div>
             <div className="Source-Han-Serif ml-1/10 font-semibold">

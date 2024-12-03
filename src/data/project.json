@@ -19,7 +19,16 @@
         "groupImg": "/group/13.webp",
         "groupMember": "林鈺茹、李苡嘉、王依仁、柯幸孜、陳思岑",
         "type": "code",
-        "Link": "https://pantry-pal.site/"
+        "Link": "https://pantry-pal.site/",
+        "ig": "https://www.instagram.com/pantry_pal_brocoli/profilecard/?igsh=d3Yxd2R5NXI4aXo=",
+        "video": "https://youtu.be/EixK3nj9Nlk?si=jY0zKc8WKCX1osUi",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" },
+          { "image": "2.webp", "alt": "Image of 2" },
+          { "image": "3.webp", "alt": "Image of 3" },
+          { "image": "4.webp", "alt": "Image of 4" },
+          { "image": "5.webp", "alt": "Image of 5" }
+        ]
       },
       {
         "id": 3,
@@ -29,7 +38,15 @@
         "projectImg": "/logo2/5.png",
         "groupImg": "/group/5.webp",
         "groupMember": "徐倍玄、陳奕廷、陳亮竹、李嘉明、蔡宗廷",
-        "type": "product"
+        "type": "product",
+        "video": "https://drive.google.com/file/d/1frnolzbUW4pgY8yn6UQR76xbqCO80527/view?usp=sharing",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" },
+          { "image": "2.webp", "alt": "Image of 2" },
+          { "image": "3.webp", "alt": "Image of 3" },
+          { "image": "4.webp", "alt": "Image of 4" },
+          { "image": "5.webp", "alt": "Image of 5" }
+        ]
       },
       {
         "id": 4,
@@ -99,7 +116,12 @@
         "projectImg": "/logo2/6.png",
         "groupImg": "/group/6.webp",
         "groupMember": "翁健哲、杜洺鋒、李承曄",
-        "type": "edu"
+        "type": "edu",
+        "Link": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+        "rf": ["https://collego.edu.tw/", "https://techexpo.moe.edu.tw/search/"],
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" }
+        ]
       },
       {
         "id": 11,
@@ -129,6 +151,12 @@
         "projectImg": "/logo2/2.png",
         "groupImg": "/group/2.webp",
         "groupMember": "張乃云、劉媞欣、簡珮軒、潘允蕙、胡亞莉",
-        "type": "edu"
+        "type": "edu",
+        "Link": "https://ideashare-lv7y.onrender.com/",
+        "ig": "https://www.instagram.com/idea.share114/profilecard/?igsh=MWdudXkwdHRpMXJ0bQ==",
+        "video": "https://youtu.be/8Hgzrwb-O-4",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" }
+        ]
       }
 ]

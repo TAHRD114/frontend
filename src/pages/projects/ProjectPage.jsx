@@ -4,6 +4,11 @@ import { useParams, useLocation } from "react-router-dom";
 import ProjectNav from "../components/ProjectNav";
 import Loading from "../components/loading";
 import { AnimatedHR } from "../components/Animation";
+import ImageSlider from "./ImgSlide";
+import Web from "../../assets/icon/web.svg";
+import Video from "../../assets/icon/video.svg";
+import IG from "../../assets/icon/instagram.svg";
+import RF from "../../assets/icon/rf.svg";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -37,6 +42,7 @@ export default function ProjectPage() {
   const motiveRef = useRef(null);
   const introRef = useRef(null);
   const recordRef = useRef(null);
+  const imgRef = useRef(null);
 
   useEffect(() => {
     const loadComponent = async () => {
@@ -76,7 +82,7 @@ export default function ProjectPage() {
       <div style={backgroundStyle} className="h-3/4 md:h-screen"></div>
       <ProjectNav
         scrollTo={scrollTo}
-        refs={{ memberRef, motiveRef, introRef, recordRef }}
+        refs={{ memberRef, motiveRef, introRef, recordRef, imgRef }}
         id={id}
       />
       <ScrollToAnchor />
@@ -130,6 +136,19 @@ export default function ProjectPage() {
           </Suspense>
         </div>
       </section>
+
+      <section id="img" ref={imgRef} className="pt-24 pb-12">
+        <div className="w-2/3 md:w-1/2 mx-auto text-center">
+          <div className="flex flex-col justify-center items-center mb-4">
+            <h3 className="text-nav-blue ">相關照片</h3>
+            <AnimatedHR id="hr-img" className="my-1 w-20" />
+          </div>
+          <div>
+            <ImageSlider id={id} />
+          </div>
+        </div>
+      </section>
+
       <section id="record" ref={recordRef} className="pt-24 pb-12">
         <div className="w-2/3 md:w-1/2 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
@@ -137,18 +156,75 @@ export default function ProjectPage() {
             <AnimatedHR id="hr-record" className="my-1 w-20" />
           </div>
 
-          {project.Link && (
-            <div className="w-1/2 mx-auto text-center">
-              <a
-                href={project.Link}
-                className="text-nav-blue no-underline"
-                target="_blank"
-                rel="noreferrer"
-              >
-                前往專題網站
-              </a>
-            </div>
-          )}
+          <div className="flex w-1/2 mx-auto justify-center">
+            {project.Link ||
+            project.ig ||
+            project.video ||
+            (project.rf && project.rf.length > 0) ? (
+              <div className="flex gap-4">
+                {project.Link && (
+                  <div className="text-center">
+                    <a
+                      href={project.Link}
+                      className="text-nav-blue no-underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Web} alt="web" className="w-10 h-10" />
+                    </a>
+                  </div>
+                )}
+
+                {project.ig && (
+                  <div className="text-center">
+                    <a
+                      href={project.ig}
+                      className="text-nav-blue no-underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={IG} alt="ig" className="w-10 h-10" />
+                    </a>
+                  </div>
+                )}
+
+                {project.video && (
+                  <div className="text-center">
+                    <a
+                      href={project.video}
+                      className="text-nav-blue no-underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Video} alt="video" className="w-10 h-10" />
+                    </a>
+                  </div>
+                )}
+
+                {project.rf && project.rf.length > 0 && (
+                  <div className="text-center flex gap-4">
+                    {project.rf.map((link, index) => (
+                      <a
+                        key={index}
+                        href={link}
+                        className="text-nav-blue no-underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src={RF}
+                          alt={`rf-${index}`}
+                          className="w-10 h-10"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <p className="text-center text-gray-500">無相關資料</p>
+            )}
+          </div>
         </div>
       </section>
     </>
