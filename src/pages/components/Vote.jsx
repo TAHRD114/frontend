@@ -51,8 +51,8 @@ function VotingSystem() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        // "https://backend-vote.onrender.com/api/submit-vote",
-        "http://127.0.0.1:3000/api/submit-vote",
+        "https://backend-vote.onrender.com/api/submit-vote",
+        //"http://127.0.0.1:3000/api/submit-vote",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
