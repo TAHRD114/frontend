@@ -3,6 +3,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { wrap } from "popmotion";
 import projects from "../../data/project.json";
 
+function getImgURL(name) {
+  return new URL(`../../assets/${name}`, import.meta.url).href;
+}
 export default function ImageGallery({ id }) {
   const [ImageGalleryPhotos, setImageGalleryPhotos] = useState([]);
   const [[imageCount, direction], setImageCount] = useState([0, 0]);
@@ -21,17 +24,20 @@ export default function ImageGallery({ id }) {
       }
       const imagesWithPaths = await Promise.all(
         project.image.map(async (img) => {
-          const imageModule = await import(
-            `../../assets/group_${id}/${img.image}`
-          );
-          return {
-            image: imageModule.default,
-            alt: img.alt,
-          };
+          try {
+            const imagePath = getImgURL(`group_${id}/${img.image}`);
+            return {
+              image: imagePath,
+              alt: img.alt,
+            };
+          } catch (error) {
+            console.error(`Failed to load image: ${img.image}`, error);
+            return null;
+          }
         })
       );
 
-      setImageGalleryPhotos(imagesWithPaths);
+      setImageGalleryPhotos(imagesWithPaths.filter(Boolean));
     };
 
     loadImages();
