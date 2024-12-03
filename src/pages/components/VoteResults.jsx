@@ -34,7 +34,7 @@ function VoteResults() {
 
   const fetchResults = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:3000/api/get-tally');
+      const response = await fetch('https://backend-vote.onrender.com/api/get-tally');
       if (!response.ok) {
         throw new Error('無法取得投票結果');
       }
