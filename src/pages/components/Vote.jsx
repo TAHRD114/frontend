@@ -3,6 +3,7 @@ import Nav from "./GameNav";
 import { Input } from "react-rainbow-components";
 import { Select } from "react-rainbow-components";
 import Data from "../../data/project.json";
+import { Spinner, Modal } from "react-bootstrap";
 
 function VotingSystem() {
   const [serialNumber, setSerialNumber] = useState("");
@@ -12,6 +13,7 @@ function VotingSystem() {
   const [hasVoted, setHasVoted] = useState(false);
   const [error, setError] = useState("");
   const [options, setOptions] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const options = [
@@ -46,9 +48,11 @@ function VotingSystem() {
       question3,
     };
 
+    setIsLoading(true);
     try {
       const response = await fetch(
-        "https://backend-vote.onrender.com/api/submit-vote",
+        // "https://backend-vote.onrender.com/api/submit-vote",
+        "http://127.0.0.1:3000/api/submit-vote",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -60,9 +64,14 @@ function VotingSystem() {
       if (result.success) {
         setHasVoted(true);
         setError("");
+        setSerialNumber("");
+        setQuestion1("");
+        setQuestion2("");
+        setQuestion3("");
         alert("感謝您的投票！");
-      } else if (result.message === "此序號已經投過票。") {
+      } else if (result.message === "序號已投過票。") {
         setError(result.message);
+        setSerialNumber("");
         alert("此序號已經投過票。");
       } else if (result.message === "序號無效。") {
         setError(result.message);
@@ -75,6 +84,8 @@ function VotingSystem() {
       setError("提交失敗，請檢查網路連線並稍後再試。");
       alert("提交失敗，請檢查網路連線並稍後再試。");
       console.error(err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -100,8 +111,17 @@ function VotingSystem() {
         <h2 className="text-center p-3">投下你最愛的組別</h2>
         <img src="/icon/2-05.png" alt="vote" className="w-16" />
       </div>
+      <Modal show={isLoading} centered backdrop="static" keyboard={false}>
+        <Modal.Body className="text-center py-4">
+          <Spinner animation="border" role="status" variant="primary" className="mb-2" />
+          <p className="mb-0">處理中，請稍候...</p>
+        </Modal.Body>
+      </Modal>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
         className="space-y-6 w-10/12 mx-auto md:w-1/2"
       >
         <div style={backgroundStyle}></div>
