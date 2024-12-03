@@ -8,6 +8,7 @@ import ImageSlider from "./ImgSlide";
 import Web from "../../assets/icon/web.svg";
 import Video from "../../assets/icon/video.svg";
 import IG from "../../assets/icon/instagram.svg";
+import RF from "../../assets/icon/rf.svg";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -156,10 +157,13 @@ export default function ProjectPage() {
           </div>
 
           <div className="flex w-1/2 mx-auto justify-center">
-            {project.Link || project.ig || project.video ? (
-              <>
+            {project.Link ||
+            project.ig ||
+            project.video ||
+            (project.rf && project.rf.length > 0) ? (
+              <div className="flex gap-4">
                 {project.Link && (
-                  <div className="mx-auto text-center">
+                  <div className="text-center">
                     <a
                       href={project.Link}
                       className="text-nav-blue no-underline"
@@ -172,7 +176,7 @@ export default function ProjectPage() {
                 )}
 
                 {project.ig && (
-                  <div className="mx-auto text-center">
+                  <div className="text-center">
                     <a
                       href={project.ig}
                       className="text-nav-blue no-underline"
@@ -185,7 +189,7 @@ export default function ProjectPage() {
                 )}
 
                 {project.video && (
-                  <div className="mx-auto text-center">
+                  <div className="text-center">
                     <a
                       href={project.video}
                       className="text-nav-blue no-underline"
@@ -196,7 +200,27 @@ export default function ProjectPage() {
                     </a>
                   </div>
                 )}
-              </>
+
+                {project.rf && project.rf.length > 0 && (
+                  <div className="text-center flex gap-4">
+                    {project.rf.map((link, index) => (
+                      <a
+                        key={index}
+                        href={link}
+                        className="text-nav-blue no-underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src={RF}
+                          alt={`rf-${index}`}
+                          className="w-10 h-10"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             ) : (
               <p className="text-center text-gray-500">無相關資料</p>
             )}

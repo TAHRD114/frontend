@@ -2,45 +2,6 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { wrap } from "popmotion";
 import projects from "../../data/project.json";
-// import Image1 from "../../assets/group_2/1.webp";
-// import Image2 from "../../assets/group_2/2.webp";
-// import Image3 from "../../assets/group_2/3.webp";
-// import Image4 from "../../assets/group_2/4.webp";
-// import Image5 from "../../assets/group_2/5.webp";
-
-// const ImageGalleryPhotos = [
-//   {
-//     image: Image1,
-//     alt: "Image of me",
-//   },
-//   {
-//     image: Image2,
-
-//     alt: "Image of me",
-//   },
-
-//   {
-//     image: Image3,
-//     alt: "Image of me",
-//   },
-//   {
-//     image: Image4,
-//     alt: "Image of me",
-//   },
-//   {
-//     image: Image5,
-//     alt: "Image of me",
-//   },
-// ];
-
-// const ImageGalleryPhotos = Array.from({ length: 5 }, (_, index) => {
-//   const imageId = index + 1;
-//   console.log(imageId);
-//   return {
-//     image: import(`../../assets/group_${id}/${imageId}.webp`),
-//     alt: `Image of me ${imageId}`,
-//   };
-// });
 
 export default function ImageGallery({ id }) {
   const [ImageGalleryPhotos, setImageGalleryPhotos] = useState([]);

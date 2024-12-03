@@ -116,7 +116,12 @@
         "projectImg": "/logo2/6.png",
         "groupImg": "/group/6.webp",
         "groupMember": "翁健哲、杜洺鋒、李承曄",
-        "type": "edu"
+        "type": "edu",
+        "Link": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+        "rf": ["https://collego.edu.tw/", "https://techexpo.moe.edu.tw/search/"],
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" }
+        ]
       },
       {
         "id": 11,
