@@ -1,6 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 import { TypeWriter } from "./Animation";
+import Click from "../../assets/icon/click.png";
+import Rank from "../../assets/icon/ranking.png";
 
 function IndividualIntervalsExample() {
   return (
@@ -34,7 +36,7 @@ function IndividualIntervalsExample() {
                 <button className="bg-dark-yellow text-nav-blue font-bold p-4 rounded flex items-center gap-2 relative">
                   <span className="text-xl">來去投票GO！</span>
                   <img
-                    src="/click.png"
+                    src={Click}
                     alt="interactive_game"
                     className="absolute right-2 bottom-2 w-10 h-10"
                   />
@@ -48,11 +50,7 @@ function IndividualIntervalsExample() {
         </Carousel.Item>
         <Carousel.Item interval={3000}>
           <div className="bg-pink w-full h-80 flex justify-center items-center">
-            <img
-              src="/ranking.png"
-              alt="interactive_game"
-              className="w-20 h-20"
-            />
+            <img src={Rank} alt="interactive_game" className="w-20 h-20" />
             <Carousel.Caption>
               <h3>投票結果</h3>
             </Carousel.Caption>

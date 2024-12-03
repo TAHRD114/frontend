@@ -1,3 +1,6 @@
+import FB from "../../assets/icon/facebook.svg";
+import IG from "../../assets/icon/instagram.svg";
+
 export default function Footer() {
   const backgroundImageUrl = "url(/keyVisual.webp)";
   const style = {
@@ -58,14 +61,14 @@ export default function Footer() {
               href="https://www.instagram.com/ntnutahrd114_thyj?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               className="ms-3 text-black"
             >
-              <img src="/instagram.svg" alt="instagram" className="w-8 h-8" />
+              <img src={IG} alt="instagram" className="w-8 h-8" />
               <span className="sr-only">instagram page</span>
             </a>
             <a
               href="https://www.facebook.com/tahrdgraduationexhibition"
               className=""
             >
-              <img src="/facebook.svg" alt="facebook" className="w-8 h-8" />
+              <img src={FB} alt="facebook" className="w-8 h-8" />
               <span className="sr-only">Facebook page</span>
             </a>
           </div>

@@ -4,9 +4,10 @@ import BlogPage from "./projects/BlogPage";
 import About from "./components/AboutPage";
 import TrafficInfo from "./components/TrafficInfo";
 import { useLocation } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Slide from "./components/Slide";
 import Sponsor from "./components/Sponsor";
+import { motion } from "motion/react";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -47,7 +48,18 @@ export default function Home() {
         <IntroPage />
       </section>
       <section id="blog" ref={blogRef} className="pt-16 ">
-        <BlogPage />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.5,
+            delay: 0.2,
+            ease: "easeInOut",
+          }}
+        >
+          <BlogPage />
+        </motion.div>
       </section>
       <section id="traffic" ref={trafficRef} className="pt-16">
         <TrafficInfo />
