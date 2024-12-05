@@ -115,6 +115,14 @@ function ToggleMenu({ scrollTo, refs }) {
                 </div>
               </div>
             </Link>
+            <hr className="my-1" />
+            <Link to="/vote" className="no-underline h-full">
+              <div className="flex items-center h-full justify-center">
+                <div className="text-white noto-serif-tc-regular text-lg">
+                  來去投票
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       )}

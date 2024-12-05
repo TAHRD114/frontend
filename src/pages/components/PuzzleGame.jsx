@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./GameNav";
 import "./game.css";
+import game from "../../assets/icon/game.png";
 
 const gridSize = 3;
 const emptyIndex = gridSize * gridSize - 1;
@@ -173,6 +174,9 @@ function App() {
             </div>
           </div>
         )}
+        <div className="hidden md:block">
+          <img src={game} alt="game-qrcode" className="w-full h-full" />
+        </div>
       </div>
 
       {isSolved && (
