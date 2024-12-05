@@ -1,5 +1,7 @@
 import React from 'react';
 import './FAQ.css';
+import "./components/GameNav"
+import GameNav from './components/GameNav';
 
 const FAQ = () => {
   const faqData = [
@@ -35,6 +37,8 @@ const FAQ = () => {
   ];
 
   return (
+    <>
+    <GameNav  />
     <div className="faq-container">
       <h1 className="faq-title">常見問題</h1>
       <div className="faq-list">
@@ -52,6 +56,7 @@ const FAQ = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
