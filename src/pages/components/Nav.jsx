@@ -117,6 +117,21 @@ function ToggleMenu({ scrollTo, refs }) {
             </Link>
             <hr className="my-1" />
             <Link
+              to="/#venue"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo(refs.venueRef);
+              }}
+              className="no-underline h-full"
+            >
+              <div className="flex items-center h-full justify-center">
+                <div className="text-white noto-serif-tc-regular text-lg">
+                  場地地圖
+                </div>
+              </div>
+            </Link>
+            <hr className="my-1" />
+            <Link
               to="/faq"
               className="no-underline h-full"
               onClick={handleClose}
@@ -128,7 +143,10 @@ function ToggleMenu({ scrollTo, refs }) {
               </div>
             </Link>
             <hr className="my-1" />
-            <Link to="/vote" className="no-underline h-full">
+            <Link
+              to="/vote"
+              className="no-underline h-full"
+            >
               <div className="flex items-center h-full justify-center">
                 <div className="text-white noto-serif-tc-regular text-lg">
                   來去投票
@@ -238,6 +256,20 @@ function FixedNav({ scrollTo, refs }) {
             <div className="flex items-center h-full justify-center">
               <div className="text-white noto-serif-tc-regular text-lg">
                 互動遊戲
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/#venue"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(refs.venueRef);
+            }}
+            className="no-underline h-full"
+          >
+            <div className="flex items-center h-full justify-center">
+              <div className="text-white noto-serif-tc-regular text-lg">
+                場地地圖
               </div>
             </div>
           </Link>
@@ -399,6 +431,20 @@ function MainNav({ scrollTo, refs }) {
           <div className="flex items-center h-full justify-center">
             <div className="text-black noto-serif-tc-regular text-lg">
               互動遊戲
+            </div>
+          </div>
+        </Link>
+        <Link
+          to="/#venue"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo(refs.venueRef);
+          }}
+          className="no-underline h-full"
+        >
+          <div className="flex items-center h-full justify-center">
+            <div className="text-black noto-serif-tc-regular text-lg">
+              場地地圖
             </div>
           </div>
         </Link>

@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import Slide from "./components/Slide";
 import Sponsor from "./components/Sponsor";
 import { motion } from "motion/react";
+import VenueMap from "./components/VenueMap";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -36,12 +37,13 @@ export default function Home() {
   const trafficRef = useRef(null);
   const aboutRef = useRef(null);
   const gameRef = useRef(null);
+  const venueRef = useRef(null);
 
   return (
     <>
       <Nav
         scrollTo={scrollTo}
-        refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef, introRef }}
+        refs={{ homeRef, gameRef, blogRef, aboutRef, trafficRef, introRef, venueRef }}
       />
       <ScrollToAnchor />
       <section id="intro" ref={introRef} className="pt-16 mb-12 md:pb-6">
@@ -70,7 +72,10 @@ export default function Home() {
       <section id="game" ref={gameRef} className="pt-16 pb-16">
         <Slide />
       </section>
-      <section id="sponsor" className="pt-16">
+      <section id="venue" ref={venueRef} className="pt-16">
+        <VenueMap />
+      </section>
+      <section id="sponsor" className="pt-16 pb-16">
         <Sponsor />
       </section>
     </>
