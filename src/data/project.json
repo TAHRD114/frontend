@@ -8,7 +8,11 @@
         "projectImg": "/logo2/8.png",
         "groupImg": "/group/8.webp",
         "groupMember": "林彥妤、劉亞臻",
-        "type": "virtual"
+        "type": "virtual",
+        "Link": "https://heyzine.com/flip-book/c106a4b14c.html",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" }
+        ]
       },
       {
         "id": 2,
@@ -86,7 +90,13 @@
         "projectImg": "/logo2/9.jpg",
         "groupImg": "/group/9.webp",
         "groupMember": "黃思齊、徐嫚謙、丁煦芊、關煒培、李承恩",
-        "type": "code"
+        "type": "code",
+        "Link": "https://wilburkwan.github.io/TrackingCarbon/",
+        "video": "https://youtu.be/iYVHpzPRlJo?si=ReqzHxMzyYW8EmC2",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" },
+          { "image": "2.webp", "alt": "Image of 2" }
+        ]
       },
       {
         "id": 8,
@@ -96,7 +106,11 @@
         "projectImg": "/logo2/12.png",
         "groupImg": "/group/12.webp",
         "groupMember": "陳翰駿、林奕嫻、張博凱",
-        "type": "hr"
+        "type": "hr",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" },
+          { "image": "2.webp", "alt": "Image of 2" }
+        ]
       },
       {
         "id": 9,
@@ -106,7 +120,11 @@
         "projectImg": "/logo2/11.png",
         "groupImg": "/group/11.webp",
         "groupMember": "盧梓銓、林志遠、邱致瑋、魏士凱",
-        "type": "hr"
+        "type": "hr",
+        "image": [
+          { "image": "1.webp", "alt": "Image of 1" },
+          {"image": "2.webp", "alt": "Image of 2" }
+        ]
       },
       {
         "id": 10,
@@ -120,7 +138,11 @@
         "Link": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
         "rf": ["https://collego.edu.tw/", "https://techexpo.moe.edu.tw/search/"],
         "image": [
-          { "image": "1.webp", "alt": "Image of 1" }
+          {"image": "1.webp", "alt": "Image of 1" },
+          {"image": "2.webp", "alt": "Image of 2" },
+          {"image": "3.webp", "alt": "Image of 3" },
+          {"image": "4.webp", "alt": "Image of 4" },
+          {"image": "5.webp", "alt": "Image of 5" }
         ]
       },
       {
@@ -131,7 +153,16 @@
         "projectImg": "/logo2/10.png",
         "groupImg": "/group/10.webp",
         "groupMember": "陳星、李米蕙、盧紫妍、吳亞蓉、古于育",
-        "type": "edu"
+        "type": "edu",
+        "Link": "https://drive.google.com/file/d/14RZR_vxfIH3B0nsRDRvhBMer8VOXyQRw/view",
+        "ig": "https://www.instagram.com/inging_taiwanese/?igsh=NzJpdGYyZjdqMmZk",
+        "rf": ["https://drive.google.com/file/d/14RZR_vxfIH3B0nsRDRvhBMer8VOXyQRw/view", "https://drive.google.com/file/d/1orPq4HIzhASqFaU9w10QqsXQbDFDsoij/view"],
+        "image": [
+          {"image": "1.webp", "alt": "Image of 1" },
+          {"image": "2.webp", "alt": "Image of 2" },
+          {"image": "3.webp", "alt": "Image of 3" },
+          {"image": "4.webp", "alt": "Image of 4" }
+        ]
       },
       {
         "id": 12,
