@@ -8,6 +8,7 @@ import ProjectPage from "./pages/projects/ProjectPage";
 import PuzzleGame from "./pages/components/PuzzleGame";
 import Vote from "./pages/components/Vote";
 import VoteResults from "./pages/components/VoteResults";
+import FAQ from "./pages/FAQ";
 
 function App() {
   const [blogRef, setBlogRef] = React.useState(null);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/puzzle_game" element={<PuzzleGame />} />
           <Route path="/vote" element={<Vote />} />
           <Route path="/iting-is-not-cute" element={<VoteResults />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />

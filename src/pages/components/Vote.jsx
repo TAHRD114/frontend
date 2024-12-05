@@ -132,7 +132,7 @@ function VotingSystem() {
           </div>
           <div className="space-y-2">
             <label htmlFor="serialNumber" className="text-base font-bold">
-              請輸入你的序號（入場券右上角）
+              請輸入你的序號（入場左下角）
             </label>
             <Input
               className="rainbow-p-around_medium"
