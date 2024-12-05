@@ -138,7 +138,7 @@ export default function ProjectPage() {
       </section>
 
       <section id="img" ref={imgRef} className="pt-24 pb-12">
-        <div className="w-2/3 md:w-1/2 mx-auto text-center">
+        <div className="w-2/3 md:w-2/3 mx-auto text-center">
           <div className="flex flex-col justify-center items-center mb-4">
             <h3 className="text-nav-blue ">相關照片</h3>
             <AnimatedHR id="hr-img" className="my-1 w-20" />
