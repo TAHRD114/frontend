@@ -9,6 +9,20 @@ function getImgURL(name) {
 export default function ImageGallery({ id }) {
   const [ImageGalleryPhotos, setImageGalleryPhotos] = useState([]);
   const [[imageCount, direction], setImageCount] = useState([0, 0]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    if (window.innerWidth <= 768) {
+      setSelectedImage(image);
+      setIsModalOpen(true);
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
 
   useEffect(() => {
     const loadImages = async () => {
@@ -97,6 +111,9 @@ export default function ImageGallery({ id }) {
               dragElastic={1}
               onDragEnd={(_, dragInfo) => dragEndHandler(dragInfo)}
               className="flex flex-col cursor-grabbing items-center justify-center"
+              onClick={() =>
+                handleImageClick(ImageGalleryPhotos[activeImageIndex])
+              } // 添加點擊事件
             >
               <img
                 src={ImageGalleryPhotos[activeImageIndex].image}
@@ -108,6 +125,20 @@ export default function ImageGallery({ id }) {
             </motion.div>
           </div>
 
+          {isModalOpen && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
+              onClick={closeModal}
+            >
+              <div className="w-11/12">
+                <img
+                  src={selectedImage.image}
+                  alt={selectedImage.alt}
+                  className="max-w-2/3 max-h-1/2"
+                />
+              </div>
+            </div>
+          )}
           <div className="flex gap-1.5 p-2">
             {ImageGalleryPhotos.map((_, index) => {
               return (
