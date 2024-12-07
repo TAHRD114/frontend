@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="/puzzle_game" element={<PuzzleGame />} />
-          {/* <Route path="/vote" element={<Vote />} /> */}
+          <Route path="/vote" element={<Vote />} />
           <Route path="/iting-is-not-cute" element={<VoteResults />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<Home />} />

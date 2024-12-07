@@ -14,6 +14,7 @@ function VotingSystem() {
   const [error, setError] = useState("");
   const [options, setOptions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isVotingOver, setIsVotingOver] = useState(true); // Set to true since voting is over
 
   useEffect(() => {
     const options = [
@@ -111,6 +112,12 @@ function VotingSystem() {
         <h2 className="text-center p-3">投下你最愛的組別</h2>
         <img src="/icon/2-05.png" alt="vote" className="w-16" />
       </div>
+      
+      <div className="alert alert-info text-center mx-auto w-10/12 md:w-1/2 mb-4" role="alert">
+        <h4 className="alert-heading">投票已結束</h4>
+        <p className="mb-0">感謝您的參與！投票時間已經結束。</p>
+      </div>
+
       <Modal show={isLoading} centered backdrop="static" keyboard={false}>
         <Modal.Body className="text-center py-4">
           <Spinner animation="border" role="status" variant="primary" className="mb-2" />
@@ -145,6 +152,7 @@ function VotingSystem() {
               required
               value={serialNumber}
               onChange={(e) => setSerialNumber(e.target.value.toUpperCase())}
+              disabled={isVotingOver}
             />
           </div>
         </div>
@@ -165,6 +173,7 @@ function VotingSystem() {
                 className="rainbow-m-vertical_x-large rainbow-p-horizontal_medium rainbow-m_auto"
                 value={question1}
                 onChange={(e) => setQuestion1(e.target.value)}
+                disabled={isVotingOver}
               />
             </div>
 
@@ -180,6 +189,7 @@ function VotingSystem() {
                 className="rainbow-m-vertical_x-large rainbow-p-horizontal_medium rainbow-m_auto"
                 value={question2}
                 onChange={(e) => setQuestion2(e.target.value)}
+                disabled={isVotingOver}
               />
             </div>
 
@@ -195,6 +205,7 @@ function VotingSystem() {
                 className="rainbow-m-vertical_x-large rainbow-p-horizontal_medium rainbow-m_auto"
                 value={question3}
                 onChange={(e) => setQuestion3(e.target.value)}
+                disabled={isVotingOver}
               />
             </div>
           </div>
@@ -203,7 +214,8 @@ function VotingSystem() {
       <div className="w-full flex justify-center mt-16">
         <button
           onClick={handleSubmit}
-          className="bg-nav-blue text-white p-2.5 rounded-md mx-auto"
+          className="bg-nav-blue text-white p-2.5 rounded-md mx-auto disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={isVotingOver}
         >
           提交投票
         </button>
