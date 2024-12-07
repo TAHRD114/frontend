@@ -50,11 +50,22 @@ function IndividualIntervalsExample() {
         </Carousel.Item>
         <Carousel.Item interval={3000}>
           <div className="bg-pink w-full h-80 flex justify-center items-center">
-            <img src={Rank} alt="interactive_game" className="w-20 h-20" />
-            <Carousel.Caption>
-              <h3>投票結果</h3>
-            </Carousel.Caption>
+            <Link to="/iting-is-not-cute" className="no-underline">
+              <div className="relative inline-block">
+                <button className="bg-dark-yellow text-nav-blue font-bold p-4 rounded flex items-center gap-2 relative">
+                  <span className="text-xl">查看投票結果</span>
+                  <img
+                    src={Rank}
+                    alt="vote_results"
+                    className="w-10 h-10"
+                  />
+                </button>
+              </div>
+            </Link>
           </div>
+          <Carousel.Caption>
+            <h3>投票結果</h3>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </>
